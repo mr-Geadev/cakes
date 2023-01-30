@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Jost:wght@400;500;600&display=swap');
+@import "colors";
+
+// Desktop/H/H1
+@mixin heading1() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 100px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $typographyDark;
+}
+
+// Desktop/H/H2
+@mixin heading2() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $typographyDark;
+}
+
+// Desktop/H/H3
+@mixin heading3() {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $typographyDark;
+}
+
+// Desktop/H/H4
+@mixin heading4() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $typographyDark;
+}
+
+// Desktop/B/B 1 L
+@mixin body1l() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.06em;
+  color: $typographyDark;
+}
+
+// Desktop/B/B 2 L
+@mixin body2l() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  color: $typographyDark;
+}
+
+// Desktop/B/B 3 Regular M
+@mixin body3regular() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  color: $typographyDark;
+}
+
+// Desktop/B/B 3 SemiBold M
+@mixin body3semibold() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  color: $typographyDark;
+}
+
+// Desktop/B/B 4 Accent M Uppercase
+@mixin body4accent() {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $typographyDark;
+}
+
+// Desktop/B/B 5 Regular S
+@mixin body5regular() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: $typographyDark;
+}
+
+// Desktop/B/B 5 Medium S
+@mixin body5medium() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: $typographyDark;
+}
+
+// Desktop/Button/1L
+@mixin button1l() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: $typographyDark;
+}
+
+// Desktop/Button/2 Regular M
+@mixin button2regular() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.06em;
+  color: $typographyDark;
+}
+
+// Desktop/Button/2 Medium M
+@mixin button2medium() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.06em;
+  color: $typographyDark;
+}
+
+// Desktop/Button/3 S
+@mixin button3s() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.06em;
+  color: $typographyDark;
+}
+
+// Desktop/Link
+@mixin link() {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.06em;
+  text-decoration-line: underline;
+  color: $typographyDark;
+}
