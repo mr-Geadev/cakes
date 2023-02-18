@@ -2,6 +2,13 @@
 @import "grid";
 @import "typography";
 
+:host {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .header {
   width: 100%;
   background-color: $green;

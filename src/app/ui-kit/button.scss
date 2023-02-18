@@ -11,6 +11,10 @@
   cursor: pointer;
   background-color: $whiteBg;
 
+  //base
+  height: 76px;
+  @include button1l;
+
   &:not(&:disabled) {
     cursor: pointer;
   }
@@ -26,6 +30,15 @@
 
     &:hover, &:active {
       background-color: $peachy;
+    }
+  }
+
+  &._red:not(&:disabled) {
+    background-color: $lightRed;
+    color: $whiteBg;
+
+    &:hover, &:active {
+      background-color: $red;
     }
   }
 }

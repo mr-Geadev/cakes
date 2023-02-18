@@ -1,0 +1,37 @@
+@import "typography";
+@import "colors";
+@import "grid";
+
+.banner {
+  height: 103vh;
+  color: $whiteBg;
+
+  background-image:
+    url('/assets/images/horizontal-line-red.svg'),
+    image-set(
+        url('/assets/images/home/banner-bg@1x.webp') 1x,
+        url('/assets/images/home/banner-bg@2x.webp') 2x
+    );
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom,  center top;
+
+  &__container {
+    padding-top: 27vh;
+  }
+
+  &__title {
+    @include heading1;
+  }
+
+  &__text {
+    @include body1l;
+    margin-top: 32px;
+    width: 504px;
+  }
+
+  &__catalog-link {
+    margin-top: 80px;
+    @include colWidth(4);
+  }
+}
