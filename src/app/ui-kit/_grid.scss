@@ -1,0 +1,17 @@
+// 1200+
+// 960-1200
+// 640-960
+// 480-640
+// 320-480
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+$col: 60px;
+$gap: 40px;
+
+@mixin colWidth($count) {
+  width: $col*$count+$gap*($count - 1);
+}

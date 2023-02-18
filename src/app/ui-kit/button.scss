@@ -1,0 +1,31 @@
+@import "colors";
+@import "typography";
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background-color .3s ease-out;
+  border-radius: 1000px;
+  cursor: pointer;
+  background-color: $whiteBg;
+
+  &:not(&:disabled) {
+    cursor: pointer;
+  }
+
+  &._small {
+    @include button3s;
+    height: 48px;
+  }
+
+  &._beige:not(&:disabled) {
+    background-color: $beige;
+    color: $typographyDark;
+
+    &:hover, &:active {
+      background-color: $peachy;
+    }
+  }
+}
