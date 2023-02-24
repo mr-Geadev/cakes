@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AboutComponent } from 'src/app/pages/home/components/about/about.component';
@@ -9,6 +10,7 @@ import { PortfolioComponent } from 'src/app/pages/home/components/portfolio/port
 import { ReviewsComponent } from 'src/app/pages/home/components/reviews/reviews.component';
 import { SpecialOfferComponent } from 'src/app/pages/home/components/special-offer/special-offer.component';
 import { HomeComponent } from 'src/app/pages/home/home.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -25,15 +27,15 @@ import { HomeComponent } from 'src/app/pages/home/home.component';
     CallbackFormComponent,
   ],
   imports: [
+    CommonModule,
     RouterModule.forChild([{
       path: '',
       component: HomeComponent,
     }]),
+    SharedModule,
   ],
   providers: [],
-  exports: [
-    ReviewsComponent,
-  ],
+  exports: [],
 })
 export class HomeModule {
 

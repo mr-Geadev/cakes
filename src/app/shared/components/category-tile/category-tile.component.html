@@ -1,0 +1,13 @@
+<a
+  [routerLink]="category.index"
+  class="category-tile"
+  [class._full-width]="fullWidth"
+  [style.background-image]="backgroundImageUrl"
+>
+  <div class="category-tile__mask"></div>
+  <div class="category-tile__hover-mask"></div>
+
+  <div class="category-tile__name" [class._full-width]="fullWidth">
+    {{ category.name }}
+  </div>
+</a>

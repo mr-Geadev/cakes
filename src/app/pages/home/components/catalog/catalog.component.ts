@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CategoryList } from 'src/app/categories';
 
 @Component({
   selector: 'app-catalog',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class CatalogComponent {
 
+  readonly CategoryList = CategoryList;
+  readonly test = []
 }

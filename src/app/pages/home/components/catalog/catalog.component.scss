@@ -1,0 +1,30 @@
+@import "grid";
+@import "typography";
+
+.catalog {
+  background: linear-gradient(180deg, #FDFDFD 0%, #FEF1EB 46.56%);
+
+  &__container {
+    padding: 80px 0 160px;
+  }
+
+  &__title {
+    @include heading2;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__tiles {
+    margin-top: 96px;
+
+    display: grid;
+    grid-row-gap: 36px;
+    grid-column-gap: 40px;
+    grid-template-rows: 384px 384px 260px;
+    grid-template-columns: auto auto auto;
+
+    & > *:last-child {
+      grid-column: span 3;
+    }
+  }
+}
