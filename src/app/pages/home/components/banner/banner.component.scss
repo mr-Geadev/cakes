@@ -3,7 +3,7 @@
 @import "grid";
 
 .banner {
-  height: 103vh;
+  height: 1103px;
   color: $whiteBg;
 
   background-image:
@@ -15,6 +15,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom,  center top;
+
+  @media screen and (max-width: 1600px) {
+    height: 103vh;
+    background-size: contain, cover;
+  }
 
   &__container {
     padding-top: 27vh;

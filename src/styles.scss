@@ -1,11 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "assets/styles/reset.css";
 
-@import "src/app/ui-kit/typography";
-@import "src/app/ui-kit/button";
-@import "src/app/ui-kit/grid";
+@import "typography";
+@import "button";
+@import "grid";
+@import "colors";
 
 body {
   font-family: 'Jost', sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
+  color: $typographyDark;
 }
