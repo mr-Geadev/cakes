@@ -1,0 +1,55 @@
+@import "typography";
+@import "grid";
+@import "colors";
+
+.advantages {
+  padding-top: 80px;
+  padding-bottom: 112px;
+
+  &__title {
+    @include heading2();
+    text-align: center;
+  }
+
+  &__list {
+    background-image: url("/assets/images/home/advantages-background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+
+    &-container {
+      margin-top: 80px;
+      padding-top: 38px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-item {
+      @include colWidth(4);
+    }
+  }
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__illustration {
+    height: 196px;
+    width: 196px;
+    object-fit: scale-down;
+  }
+
+  &__title {
+    margin-top: 75px;
+    @include body4accent();
+    color: $green;
+  }
+
+  &__text {
+    margin-top: 16px;
+    @include body5regular();
+    text-align: center;
+  }
+}
