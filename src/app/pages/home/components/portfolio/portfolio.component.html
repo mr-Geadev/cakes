@@ -1,1 +1,20 @@
-Portfolio
+<div class="portfolio">
+  <div class="portfolio__container container">
+    <h2 class="portfolio__title">
+      Портфолио
+    </h2>
+
+    <p class="portfolio__text">
+      Следует отметить, что дальнейшее развитие различных форм деятельности позволяет выполнить важные
+    </p>
+
+    <app-gallery
+      class="portfolio__gallery"
+      [photoList]="photoList"
+    ></app-gallery>
+
+    <button class="portfolio__show-more-btn btn _white _medium">
+      Показать еще
+    </button>
+  </div>
+</div>

@@ -19,10 +19,19 @@
     cursor: pointer;
   }
 
+
+  // sizes
   &._small {
     @include button3s;
     height: 48px;
   }
+
+  &._medium {
+    @include button2medium;
+    height: 72px;
+  }
+
+  // colors
 
   &._beige:not(&:disabled) {
     background-color: $beige;
@@ -39,6 +48,15 @@
 
     &:hover, &:active {
       background-color: $red;
+    }
+  }
+
+  &._white:not(&:disabled) {
+    background-color: $whiteBg;
+    color: $typographyDark;
+
+    &:hover, &:active {
+      background-color: $beige;
     }
   }
 }
