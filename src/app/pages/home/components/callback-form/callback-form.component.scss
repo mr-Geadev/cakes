@@ -1,0 +1,81 @@
+@import "grid";
+@import "typography";
+
+.callback-form {
+  height: 865px;
+  background-image: url("/assets/images/callback/callback-bg.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center bottom, center top;
+
+  &__container {
+    padding-top: 256px;
+  }
+
+  &__photo {
+    position: absolute;
+    height: 860px;
+    width: 645px;
+  }
+
+  &__form {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+      @include heading2;
+    }
+
+    &-description {
+      width: 676px;
+      text-align: center;
+      @include body2l;
+      margin: 24px 0 40px;
+    }
+
+    &-inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & input {
+        @include body2l;
+        width: 830px;
+        height: 78px;
+
+        background: #FDFDFD;
+        border-radius: 80px;
+
+        padding: 21px 48px;
+        margin-bottom: 24px;
+
+        &.ng-invalid.ng-touched {
+          border: red 1px solid;
+        }
+      }
+    }
+
+    &-btn {
+      @include button2medium;
+      @include colWidth(4);
+      margin: 16px auto 0;
+    }
+  }
+}
+
+.alert__validator-danger {
+  background-color: $lightRed;
+  color: $white;
+  text-align: center;
+
+  margin-top: -24px;
+  margin-bottom: 15px;
+  padding: 15px 0;
+  border-radius: 0 0 25px 25px;
+
+  width: 750px;
+
+}

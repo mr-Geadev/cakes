@@ -68,4 +68,13 @@
       background-color: #157565;
     }
   }
+
+  &._black:not(&:disabled) {
+    background-color: #313131;
+    color: #FDFDFD;
+
+    &:hover, &:active {
+      background-color: #424242;
+    }
+  }
 }

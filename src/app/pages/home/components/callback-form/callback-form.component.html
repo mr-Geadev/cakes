@@ -1,0 +1,26 @@
+<div class="callback-form">
+  <img class="callback-form__photo" src="/assets/images/callback/callback-photo-1@1x.png" alt="Cake">
+  <div class="callback-form__container">
+    <form class="callback-form__form" [formGroup]="callbackForm" novalidate (ngSubmit)="submit()">
+      <h2 class="callback-form__form-title">
+        Не знаете что выбрать?
+      </h2>
+      <p class="callback-form__form-description">
+        Оставьте свои контактные данные и мы обсудим ваш идеальный торт вместе
+      </p>
+      <div class="callback-form__form-inputs">
+        <input type="text" name="name" id="name" placeholder="Ваше имя" value="" formControlName="name">
+        <div class="alert__validator-danger"
+             *ngIf="callbackForm.controls['name'].invalid && callbackForm.controls['name'].touched">
+          Поле обязательно для заполнения
+        </div>
+        <input type="text" name="phone" id="phone" placeholder="Номер телефона" value="" formControlName="phone">
+        <div class="alert__validator-danger"
+             *ngIf="callbackForm.controls['phone'].invalid && callbackForm.controls['phone'].touched">
+          Некорректный номер телефона
+        </div>
+      </div>
+      <button class="callback-form__form-btn btn _black _medium" [disabled]="callbackForm.invalid">Отправить</button>
+    </form>
+  </div>
+</div>
