@@ -59,4 +59,13 @@
       background-color: $beige;
     }
   }
+
+  &._green:not(&:disabled) {
+    background-color: #19927F;
+    color: #FDFDFD;
+
+    &:hover, &:active {
+      background-color: #157565;
+    }
+  }
 }
