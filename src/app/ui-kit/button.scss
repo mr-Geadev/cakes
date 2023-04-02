@@ -61,11 +61,11 @@
   }
 
   &._green:not(&:disabled) {
-    background-color: #19927F;
-    color: #FDFDFD;
+    background-color: $green;
+    color: $whiteBg;
 
     &:hover, &:active {
-      background-color: #157565;
+      background-color: $green; //TODO: Исправить на нужный цвет
     }
   }
 }
