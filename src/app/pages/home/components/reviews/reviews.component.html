@@ -1,0 +1,17 @@
+<div class="reviews">
+  <div class="reviews__container">
+    <h2 class="reviews__title">
+      Отзывы клиентов
+    </h2>
+
+    <div class="reviews__cards">
+      <app-review-card
+        *ngFor="let review of reviewList;"
+        [review]="review"
+      ></app-review-card>
+    </div>
+    <button class="reviews__btn btn _medium _green">
+      Посмотреть все
+    </button>
+  </div>
+</div>

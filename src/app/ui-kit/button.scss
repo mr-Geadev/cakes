@@ -59,4 +59,13 @@
       background-color: $beige;
     }
   }
+
+  &._green:not(&:disabled) {
+    background-color: $green;
+    color: $whiteBg;
+
+    &:hover, &:active {
+      background-color: $green; //TODO: Исправить на нужный цвет
+    }
+  }
 }
