@@ -1,10 +1,11 @@
 @import "typography";
+@import "colors";
 
 .review-card {
   width: 610px;
   height: 297px;
 
-  background-color: #E3E8F4;
+  background-color: $blue;
   border-radius: 18px;
   box-shadow:
     -53px 126px 55px rgba(129, 121, 121, 0.01),
@@ -20,7 +21,6 @@
   &__title {
     display: flex;
     align-items: center;
-    margin: 0 0 18.5px;
 
     &-name {
       @include body1l;
@@ -32,8 +32,9 @@
     width: 562px;
     height: 186px;
 
-    background-color: #FBFBFB;
+    background-color: $whiteBg;
     border-radius: 12px;
+    margin-top: 18.5px;
     padding: 24px;
     @include body5regular;
   }

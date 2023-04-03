@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ReviewList } from 'src/app/reviews';
+import { reviewList } from 'src/app/pages/home/components/reviews/reviews';
 
 @Component({
   selector: 'app-reviews',
@@ -7,5 +7,5 @@ import { ReviewList } from 'src/app/reviews';
   styleUrls: ['./reviews.component.scss']
 })
 export class ReviewsComponent {
-  readonly ReviewList = ReviewList;
+  readonly reviewList = reviewList;
 }
