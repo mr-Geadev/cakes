@@ -1,0 +1,45 @@
+@import "colors";
+@import "typography";
+@import "grid";
+
+.special-offer {
+  background-color: $beige;
+  position: relative;
+
+  &__transition {
+    position: absolute;
+    width: 100%;
+
+    path {
+      fill: $green;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 2vw;
+    width: 45%;
+  }
+
+  &__container {
+    padding: 142px 0 190px;
+  }
+
+  &__title {
+    @include heading2;
+    font-size: 64px;
+    line-height: 80px;
+  }
+
+  &__text {
+    margin-top: 24px;
+    @include colWidth(5);
+    @include body2l;
+  }
+
+  &__button {
+    margin-top: 80px;
+    @include colWidth(4);
+  }
+}
