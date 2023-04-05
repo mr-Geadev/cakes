@@ -65,16 +65,16 @@
     color: $whiteBg;
 
     &:hover, &:active {
-      background-color: $green; //TODO: Исправить на нужный цвет
+      background-color: $darkgreen;
     }
   }
 
   &._black:not(&:disabled) {
-    background-color: #313131;
-    color: #FDFDFD;
+    background-color: $dark;
+    color: $whiteBg;
 
     &:hover, &:active {
-      background-color: #424242;
+      background-color: $dark; //TODO: Исправить на нужный цвет
     }
   }
 }

@@ -27,15 +27,15 @@ import {ReactiveFormsModule} from "@angular/forms";
     ReviewsComponent,
     CallbackFormComponent,
   ],
-    imports: [
-        CommonModule,
-        RouterModule.forChild([{
-            path: '',
-            component: HomeComponent,
-        }]),
-        SharedModule,
-        ReactiveFormsModule,
-    ],
+  imports: [
+      CommonModule,
+      RouterModule.forChild([{
+          path: '',
+          component: HomeComponent,
+      }]),
+      SharedModule,
+      ReactiveFormsModule,
+  ],
   providers: [],
   exports: [],
 })

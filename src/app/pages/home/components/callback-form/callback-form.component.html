@@ -1,5 +1,10 @@
 <div class="callback-form">
-  <img class="callback-form__photo" src="/assets/images/callback/callback-photo-1@1x.png" alt="Cake">
+  <img class="callback-form__photo"
+       src="/assets/images/callback/callback-photo-1@1x.png"
+       srcset="/assets/images/callback/callback-photo-1@1x.png,
+               /assets/images/callback/callback-photo-1@2x.png 2x"
+       alt="Cake"
+  >
   <div class="callback-form__container">
     <form class="callback-form__form" [formGroup]="callbackForm" novalidate (ngSubmit)="submit()">
       <h2 class="callback-form__form-title">
@@ -9,18 +14,18 @@
         Оставьте свои контактные данные и мы обсудим ваш идеальный торт вместе
       </p>
       <div class="callback-form__form-inputs">
-        <input type="text" name="name" id="name" placeholder="Ваше имя" value="" formControlName="name">
-        <div class="alert__validator-danger"
-             *ngIf="callbackForm.controls['name'].invalid && callbackForm.controls['name'].touched">
+        <input type="text" placeholder="Ваше имя" formControlName="name">
+        <div class="alert _danger"
+             *ngIf="shouldShowErrorForFiled('name')">
           Поле обязательно для заполнения
         </div>
-        <input type="text" name="phone" id="phone" placeholder="Номер телефона" value="" formControlName="phone">
-        <div class="alert__validator-danger"
-             *ngIf="callbackForm.controls['phone'].invalid && callbackForm.controls['phone'].touched">
+        <input type="text" placeholder="Номер телефона" formControlName="phone">
+        <div class="alert _danger"
+             *ngIf="shouldShowErrorForFiled('phone')">
           Некорректный номер телефона
         </div>
       </div>
-      <button class="callback-form__form-btn btn _black _medium" [disabled]="callbackForm.invalid">Отправить</button>
+      <button type="submit" class="callback-form__form-btn btn _black _medium" [disabled]="callbackForm.invalid">Отправить</button>
     </form>
   </div>
 </div>
