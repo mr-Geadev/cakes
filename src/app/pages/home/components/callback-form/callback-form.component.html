@@ -1,0 +1,66 @@
+<div class="callback">
+  <img
+    class="callback__illustration"
+    src="/assets/images/callback/callback-photo-1@1x.png"
+    srcset="
+      /assets/images/callback/callback-photo-1@1x.png 1x,
+      /assets/images/callback/callback-photo-1@2x.png 2x
+    "
+    alt="callback-illustration"
+  >
+
+  <div class="callback__container">
+    <h2 class="callback__title">
+      Не знаете что выбрать?
+    </h2>
+
+    <p class="callback__description">
+      Оставьте свои контактные данные и мы обсудим ваш идеальный торт вместе
+    </p>
+
+    <form
+      class="callback__form"
+      [formGroup]="callbackForm"
+      (ngSubmit)="submit()"
+      novalidate
+    >
+      <div class="callback__form-input">
+        <input
+          type="text"
+          class="input"
+          placeholder="Ваше имя"
+          formControlName="name"
+        >
+        <div
+          class="input__error-message"
+          *ngIf="shouldShowErrorForFiled('name')"
+        >
+          Поле обязательно для заполнения
+        </div>
+      </div>
+
+      <div class="callback__form-input">
+        <input
+          type="text"
+          class="input"
+          placeholder="Номер телефона"
+          formControlName="phone"
+        >
+        <div
+          class="input__error-message"
+          *ngIf="shouldShowErrorForFiled('phone')"
+        >
+          Некорректный номер телефона
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        class="callback__form-btn btn _black _medium"
+        [disabled]="callbackForm.invalid"
+      >
+        Отправить
+      </button>
+    </form>
+  </div>
+</div>

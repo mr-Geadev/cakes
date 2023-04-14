@@ -11,6 +11,7 @@ import { ReviewsComponent } from 'src/app/pages/home/components/reviews/reviews.
 import { SpecialOfferComponent } from 'src/app/pages/home/components/special-offer/special-offer.component';
 import { HomeComponent } from 'src/app/pages/home/home.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -27,12 +28,13 @@ import { SharedModule } from 'src/app/shared/shared.module';
     CallbackFormComponent,
   ],
   imports: [
-    CommonModule,
-    RouterModule.forChild([{
-      path: '',
-      component: HomeComponent,
-    }]),
-    SharedModule,
+      CommonModule,
+      RouterModule.forChild([{
+          path: '',
+          component: HomeComponent,
+      }]),
+      SharedModule,
+      ReactiveFormsModule,
   ],
   providers: [],
   exports: [],
