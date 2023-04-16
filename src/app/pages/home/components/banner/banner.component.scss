@@ -22,7 +22,7 @@
   }
 
   &__container {
-    padding-top: 27vh;
+    padding-top: 24vh;
   }
 
   &__title {
@@ -31,12 +31,12 @@
 
   &__text {
     @include body1l;
-    margin-top: 32px;
+    margin-top: 24px;
     width: 504px;
   }
 
   &__catalog-link {
-    margin-top: 80px;
+    margin-top: 64px;
     @include colWidth(4);
   }
 }
