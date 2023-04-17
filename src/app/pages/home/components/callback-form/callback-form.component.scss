@@ -10,7 +10,6 @@
   background-image: url("/assets/images/callback/callback-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
 
   &__container {
     display: flex;
@@ -29,9 +28,9 @@
   }
 
   &__description {
-    margin-top: 24px;
+    margin-top: 16px;
     @include body2l;
-    max-width: 676px;
+    max-width: 543px;
     text-align: center;
   }
 
@@ -55,9 +54,9 @@
     }
 
     &-btn {
+      width: 188px;
       margin: 24px auto 0;
       @include button2medium;
-      @include colWidth(4);
     }
   }
 }
