@@ -67,9 +67,9 @@
   }
 
   &._black {
+    background-color: $typographyDark;
+    color: $white;
     &:not(:disabled) {
-      background-color: $typographyDark;
-      color: $white;
 
       &:hover, &:active {
         background-color: $red;
