@@ -49,6 +49,7 @@
 
 .menu {
   display: flex;
+  align-items: center;
 
   & > *:not(:first-child) {
     margin-left: 48px;
