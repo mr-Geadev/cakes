@@ -4,8 +4,8 @@
 @mixin heading1() {
   font-family: 'Jost', sans-serif;
   font-weight: 600;
-  font-size: 96px;
-  line-height: 100px;
+  font-size: 72px;
+  line-height: 76px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -15,7 +15,7 @@
   font-family: 'Jost', sans-serif;
   font-weight: 500;
   font-size: 36px;
-  line-height: 52px;
+  line-height: 40px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -34,8 +34,8 @@
 @mixin heading4() {
   font-family: 'Jost', sans-serif;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 24px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -44,8 +44,8 @@
 @mixin body1l() {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 24px;
+  line-height: 32px;
   letter-spacing: 0.06em;
 }
 
@@ -53,8 +53,8 @@
 @mixin body2l() {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 24px;
   letter-spacing: 0.04em;
 }
 
@@ -62,8 +62,8 @@
 @mixin body3regular() {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 44px;
+  font-size: 16px;
+  line-height: 30px;
   letter-spacing: 0.04em;
 }
 
@@ -71,8 +71,8 @@
 @mixin body3semibold() {
   font-family: 'Jost', sans-serif;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 30px;
   letter-spacing: 0.03em;
 }
 
@@ -90,8 +90,8 @@
 @mixin body5regular() {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 20px;
   letter-spacing: 0.06em;
 }
 
@@ -99,8 +99,8 @@
 @mixin body5medium() {
   font-family: 'Jost', sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 20px;
   letter-spacing: 0.06em;
 }
 
@@ -108,8 +108,8 @@
 @mixin button1l() {
   font-family: 'Jost', sans-serif;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 26px;
   letter-spacing: 0.06em;
 }
 
@@ -117,8 +117,8 @@
 @mixin button2regular() {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 20px;
   letter-spacing: 0.06em;
 }
 
@@ -126,8 +126,8 @@
 @mixin button2medium() {
   font-family: 'Jost', sans-serif;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 20px;
   letter-spacing: 0.06em;
 }
 
@@ -135,8 +135,8 @@
 @mixin button3s() {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 20px;
   letter-spacing: 0.06em;
 }
 
@@ -144,8 +144,8 @@
 @mixin link() {
   font-family: 'Jost', sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 20px;
   letter-spacing: 0.06em;
   text-decoration-line: underline;
 }

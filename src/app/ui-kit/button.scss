@@ -12,60 +12,89 @@
   background-color: $whiteBg;
 
   //base
-  height: 76px;
-  @include button1l;
+  height: 44px;
+  @include button3s;
 
   &:not(&:disabled) {
     cursor: pointer;
   }
 
-
   // sizes
-  &._small {
-    @include button3s;
-    height: 48px;
-  }
-
-  &._medium {
-    @include button2medium;
-    height: 72px;
+  &._big {
+    @include button1l;
+    height: 60px;
   }
 
   // colors
 
-  &._beige:not(&:disabled) {
-    background-color: $beige;
-    color: $typographyDark;
-
-    &:hover, &:active {
-      background-color: $peachy;
-    }
-  }
-
-  &._red:not(&:disabled) {
-    background-color: $lightRed;
-    color: $whiteBg;
-
-    &:hover, &:active {
-      background-color: $red;
-    }
-  }
-
-  &._white:not(&:disabled) {
-    background-color: $whiteBg;
-    color: $typographyDark;
-
-    &:hover, &:active {
+  &._beige {
+    &:not(:disabled) {
       background-color: $beige;
+      color: $typographyDark;
+
+      &:hover, &:active {
+        background-color: $peachy;
+      }
     }
   }
 
-  &._green:not(&:disabled) {
-    background-color: $green;
-    color: $whiteBg;
+  &._red {
+    &:not(&:disabled) {
+      background-color: $lightRed;
+      color: $whiteBg;
 
-    &:hover, &:active {
-      background-color: $green; //TODO: Исправить на нужный цвет
+      &:hover, &:active {
+        background-color: $red;
+      }
     }
+  }
+
+  // TODO допилить после доработки дизайна
+  &._outline {
+    &:not(:disabled) {
+      background-color: transparent;
+      border: 2px solid $lightRed;
+      color: $typographyDark;
+
+      &:hover, &:active {
+        border-color: $typographyDark;
+      }
+    }
+
+    &:disabled {
+
+    }
+  }
+
+  &._black {
+    background-color: $typographyDark;
+    color: $white;
+    &:not(:disabled) {
+
+      &:hover, &:active {
+        background-color: $red;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+
+  &._green {
+    &:not(:disabled) {
+      background-color: $green;
+      color: $whiteBg;
+
+      &:hover, &:active {
+        background-color: $darkgreen;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.4;
+    }
+
   }
 }

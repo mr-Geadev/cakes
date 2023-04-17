@@ -4,7 +4,7 @@
 
 .portfolio {
   background-color: $green;
-  padding: 80px 0 112px;
+  padding: 80px 0 148px;
 
   &__container {
     display: flex;
@@ -19,7 +19,7 @@
   }
 
   &__text {
-    margin-top: 24px;
+    margin-top: 16px;
     max-width: 676px;
     @include body2l();
     color: $whiteBg;
@@ -27,11 +27,11 @@
   }
 
   &__gallery {
-    margin-top: 64px;
+    margin-top: 48px;
   }
 
   &__show-more-btn {
-    margin: 80px auto 0;
-    @include colWidth(4);
+    margin: 48px auto 0;
+    width: 220px;
   }
 }

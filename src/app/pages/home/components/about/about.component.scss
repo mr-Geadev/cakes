@@ -5,7 +5,7 @@
 .about {
   &__container {
     padding-top: 80px;
-    padding-bottom: 189px;
+    padding-bottom: 66px;
   }
 
   &__title {
@@ -15,50 +15,55 @@
   }
 
   &__wrapper {
-    margin-top: 96px;
+    margin-top: 48px;
     display: flex;
-    justify-content: space-between;
   }
 
   &__photos {
-    @include colWidth(6);
+    @include colWidth(5);
     position: relative;
-    height: 593px;
+    height: 545px;
   }
 
   &__photo {
     position: absolute;
+    border-radius: 5px;
 
     &._top {
       top: 0;
       left: 0;
+      width: 331px;
     }
 
     &._bottom {
       right: 0;
       bottom: 0;
+      height: 276px;
 
       box-shadow: -53px 126px 55px rgba(129, 121, 121, 0.01), -30px 71px 46px rgba(129, 121, 121, 0.05), -13px 31px 34px rgba(129, 121, 121, 0.09), -3px 8px 19px rgba(129, 121, 121, 0.1);
     }
 
     &._line-bg {
-      top: 129px;
-      left: -58px;
+      top: 140px;
+      left: -30px;
+      width: 530px;
+      height: 499px;
     }
   }
 
   &__description {
-    @include colWidth(6);
+    @include colWidth(5);
+    margin-left: 140px;
+    margin-top: 54px;
 
     &-title {
       @include heading3;
       color: $green;
-      margin-top: 100px;
     }
 
     &-text {
       @include body3regular;
-      margin-top: 40px;
+      margin-top: 24px;
     }
   }
 }

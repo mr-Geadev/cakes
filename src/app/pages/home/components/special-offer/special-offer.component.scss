@@ -23,23 +23,21 @@
   }
 
   &__container {
-    padding: 142px 0 190px;
+    padding: 140px 0 196px;
   }
 
   &__title {
-    @include heading2;
-    font-size: 64px;
-    line-height: 80px;
+    @include heading2();
   }
 
   &__text {
-    margin-top: 24px;
-    @include colWidth(5);
-    @include body2l;
+    margin-top: 44px;
+    @include colWidth(6);
+    @include body1l;
   }
 
   &__button {
-    margin-top: 80px;
+    margin-top: 64px;
     @include colWidth(4);
   }
 }
