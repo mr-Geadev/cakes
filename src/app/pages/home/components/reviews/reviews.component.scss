@@ -4,7 +4,7 @@
 .reviews {
 
   &__container {
-    padding: 80px 0;
+    margin: 80px 0;
   }
 
   &__title {
@@ -14,20 +14,30 @@
   }
 
   &__cards {
-    height: 500px;
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     -ms-overflow-style: none;  /* IE и Edge */
     scrollbar-width: none;  /* Firefox */
+    padding: 48px 0;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
-  &__cards::-webkit-scrollbar {
-    display: none;
+
+  &__card {
+    margin-left: 38px;
+
+    // для сохранения отступа справа при полной прокрутке
+    &:last-child {
+      margin-right: 38px;
+    }
   }
 
   &__btn {
     @include button2medium;
-    @include colWidth(4);
+    width: 237px;
     margin: 0 auto;
   }
 }
