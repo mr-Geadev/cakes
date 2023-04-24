@@ -2,8 +2,8 @@
 @import "colors";
 
 .review-card {
-  width: 508px;
-  height: 297px;
+  width: 460px;
+  height: 221px;
 
   background-color: $blue;
   border-radius: 18px;
@@ -13,25 +13,28 @@
     -13px 31px 34px rgba(129, 121, 121, 0.09),
     -3px 8px 19px rgba(129, 121, 121, 0.1);
 
-  padding: 32px 24px 24px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
 
   &__title {
     display: flex;
     align-items: center;
+    height: 44px;
 
     &-name {
-      @include body1l;
-      padding-left: 10px;
+      @include body5medium;
     }
   }
 
   &__description {
-    height: 186px;
+    flex-grow: 1;
 
     background-color: $whiteBg;
     border-radius: 12px;
-    margin-top: 20px;
+    margin-top: 8px;
     padding: 16px;
-    @include body5regular;
+    @include button2regular;
   }
 }
