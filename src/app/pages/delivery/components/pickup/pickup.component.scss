@@ -1,0 +1,33 @@
+@import "colors";
+@import "typography";
+
+.pickup {
+  padding-bottom: 158px;
+
+  &__container {
+    display: flex;
+    margin-top: 72px;
+  }
+
+  &__section {
+    width: 50%;
+  }
+
+  &__title {
+    @include heading2;
+  }
+
+  &__desc {
+    @include body3regular;
+    margin-top: 48px;
+  }
+
+  &__info {
+    @include body3semibold;
+    margin-top: 24px;
+
+    & p:first-child {
+      margin-bottom: 8px;
+    }
+  }
+}
