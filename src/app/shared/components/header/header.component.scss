@@ -61,22 +61,17 @@
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
 
   &__title {
     @include body5medium;
 
     &-arrow {
-      width: 12px;
-      height: 6px;
-      -webkit-transition: -webkit-transform .2s ease-in-out;
-      transition:         transform .2s ease-in-out;
+      margin-bottom: 1px;
+      transition: transform .2s ease-in-out;
     }
   }
 
-  &:hover .dropdown__title-arrow {
-    -webkit-transform: rotate(-180deg);
+  &:hover &__title-arrow {
     transform: rotate(-180deg);
   }
 
@@ -91,17 +86,14 @@
     border-radius: 15px;
 
     &-item {
-      width: 336px;
       @include button2regular;
+      min-width: 182px;
       color: $typographyDark;
-      float: none;
       padding: 12px 16px;
-      text-decoration: none;
       display: block;
-      text-align: left;
 
       &:hover {
-        background: $beige;
+        background-color: $beige;
       }
 
       &:first-child {
@@ -111,13 +103,9 @@
       &:last-child {
         border-radius: 0 0 15px 15px;
       }
-
-      &._width_182px{
-        width: 182px;
-      }
     }
 
-    &:before {
+    &:before { //Данный блок предотвращает закрытие меню, после передвижения курсора вниз к элементам меню
       content: '';
       position: absolute;
       top: -30px;
