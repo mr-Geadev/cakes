@@ -1,7 +1,7 @@
 <div class="social-block">
   <a
     *ngFor="let link of socialLinkList"
-    href="{{link.link}}"
+    [href]="link.link"
     target="_blank">
     <img
       class="social-block-item"
