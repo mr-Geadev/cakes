@@ -6,6 +6,7 @@ import { ReviewCardComponent } from 'src/app/shared/components/review-card/revie
 import { FooterComponent } from 'src/app/shared/components/footer/footer.component';
 import { GalleryComponent } from 'src/app/shared/components/gallery/gallery.component';
 import { HeaderComponent } from 'src/app/shared/components/header/header.component';
+import { SocialBlockComponent } from "./components/social-block/social-block.component";
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { HeaderComponent } from 'src/app/shared/components/header/header.compone
     CategoryTileComponent,
     ReviewCardComponent,
     GalleryComponent,
+    SocialBlockComponent
   ],
   exports: [
     HeaderComponent,
@@ -25,6 +27,7 @@ import { HeaderComponent } from 'src/app/shared/components/header/header.compone
     CategoryTileComponent,
     ReviewCardComponent,
     GalleryComponent,
+    SocialBlockComponent,
   ],
 })
 export class SharedModule {}

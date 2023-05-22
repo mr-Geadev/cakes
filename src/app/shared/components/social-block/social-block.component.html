@@ -1,0 +1,11 @@
+<div class="social-block">
+  <a
+    *ngFor="let link of socialLinkList"
+    [href]="link.link"
+    target="_blank">
+    <img
+      class="social-block-item"
+      [src]="link.icon"
+      [alt]="link.name">
+  </a>
+</div>
