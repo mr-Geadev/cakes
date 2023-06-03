@@ -49,6 +49,7 @@
 
 .menu {
   display: flex;
+  align-items: center;
 
   & > *:not(:first-child) {
     margin-left: 48px;
@@ -56,10 +57,64 @@
 
   &__item {
     @include body5regular;
+  }
+}
 
-    &._with-dropdown {
-      @include body5medium;
-      padding-right: 28px; // под иконку
+.dropdown {
+
+  &__title {
+    @include body5medium;
+
+    &-arrow {
+      margin-bottom: 1px;
+      transition: transform .2s ease-in-out;
     }
+  }
+
+  &:hover &__title-arrow {
+    transform: rotate(-180deg);
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    top: 80px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+
+    &-item {
+      @include button2regular;
+      min-width: 182px;
+      color: $typographyDark;
+      padding: 12px 16px;
+      display: block;
+
+      &:hover {
+        background-color: $beige;
+      }
+
+      &:first-child {
+        border-radius: 15px 15px 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 15px 15px;
+      }
+    }
+
+    &:before { //Данный блок предотвращает закрытие меню, после передвижения курсора вниз к элементам меню
+      content: '';
+      position: absolute;
+      top: -30px;
+      height: 30px;
+      width: 150px;
+    }
+  }
+
+  &:hover .dropdown__content {
+    display: block;
   }
 }
