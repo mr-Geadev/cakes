@@ -17,9 +17,9 @@
   }
 
   &__desc {
+    @include body2l;
     margin-top: 16px;
     text-align: center;
-    @include body2l;
   }
 
   &__list {
@@ -32,18 +32,16 @@
       align-items: center;
     }
 
-    & li:not(:last-child) {
-      margin-bottom: 24px;
+    & li:not(:first-child) {
+      margin-top: 24px;
     }
 
     &-image {
-      font-family: Caveat, cursive;
-      font-size: 24px;
-
+      @include body4accent;
       width: 47px;
       height: 49px;
-      padding-top: 14px;
-      padding-left: 16px;
+      padding: 8px 0;
+      text-align: center;
       margin-right: 24px;
       background: url("/assets/images/delivery/delivery-circle.svg");
     }

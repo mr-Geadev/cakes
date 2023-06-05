@@ -2,7 +2,7 @@
 @import "colors";
 
 :host {
-  background: #EC7272;
+  background: $lightRed;
 }
 
 .information {
@@ -16,6 +16,7 @@
   }
 
   &__title {
+    width: 400px;
     margin-top: 59px;
     color: $typographyDark;
     @include heading2;
@@ -34,11 +35,11 @@
   &__content {
     margin-top: 48px;
 
-    &-desc {
+    &-desc-accent {
       @include body3regular;
     }
 
-    &-price {
+    &-price-accent {
       @include body3regular;
       margin-top: 48px;
 
@@ -47,12 +48,12 @@
       }
     }
 
-    &-timeTitle {
+    &-time-title {
       @include body3semibold;
       margin-top: 16px;
     }
 
-    &-timeList {
+    &-time-list {
       @include body3regular;
       margin-top: 8px;
     }
