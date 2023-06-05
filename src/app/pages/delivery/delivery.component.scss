@@ -1,0 +1,11 @@
+:host {
+  display: block;
+  background-image:
+    url('/assets/images/delivery/delivery-line-bg.svg'),
+    image-set(
+        url('/assets/images/delivery/delivery-bg.svg') 1x
+    );
+  background-repeat: no-repeat;
+  background-size: 1250px, 2050px;
+  background-position: right top,  center top;
+}

@@ -1,10 +1,6 @@
 @import "typography";
 @import "colors";
 
-:host {
-  background: $lightRed;
-}
-
 .information {
   padding-top: 188px;
   &__container {
