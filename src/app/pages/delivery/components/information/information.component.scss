@@ -1,0 +1,57 @@
+@import "typography";
+@import "colors";
+
+.information {
+  padding-top: 188px;
+  &__container {
+    display: flex;
+  }
+
+  &__section {
+    width: 50%;
+  }
+
+  &__title {
+    width: 400px;
+    margin-top: 59px;
+    color: $typographyDark;
+    @include heading2;
+  }
+
+  &__subtitle {
+    margin-top: 56px;
+    color: $green;
+    @include body4accent;
+  }
+
+  &__image {
+    margin-left: -75px;
+  }
+
+  &__content {
+    margin-top: 48px;
+
+    &-desc-accent {
+      @include body3regular;
+    }
+
+    &-price-accent {
+      @include body3regular;
+      margin-top: 48px;
+
+      &--body3semibold {
+        @include body3semibold;
+      }
+    }
+
+    &-time-title {
+      @include body3semibold;
+      margin-top: 16px;
+    }
+
+    &-time-list {
+      @include body3regular;
+      margin-top: 8px;
+    }
+  }
+}
