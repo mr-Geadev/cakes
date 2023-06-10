@@ -7,8 +7,8 @@ export interface Category {
 }
 
 export const CategoryList: Category[] = [
-  { index: 'to-order', name: 'Торты на заказ', image: 'to-order.png'},
   { index: 'classic', name: 'Классические торты', image: 'classic.png'},
+  { index: 'to-order', name: 'Торты на заказ', image: 'to-order.png'},
   { index: 'wedding', name: 'Свадебные торты', image: 'wedding.png'},
   { index: 'desserts', name: 'Десерты', image: 'desserts.png'},
   { index: 'bread', name: 'Хлеб', image: 'bread.png'},
