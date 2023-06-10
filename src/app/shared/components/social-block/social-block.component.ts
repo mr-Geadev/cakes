@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 type SocialLink = {
   name: string,
@@ -35,5 +35,8 @@ export const socialLinkList : SocialLink[] = [
   styleUrls: ['./social-block.component.scss']
 })
 export class SocialBlockComponent {
+  @Input() horizontal = false;
+  @Input() type: 'glass' | 'plain' = 'plain';
+
   socialLinkList = socialLinkList;
 }

@@ -1,4 +1,8 @@
-<div class="social-block">
+<div
+  class="social-block"
+  [class._horizontal]="horizontal"
+  [class._glass]="type === 'glass'"
+>
   <a
     *ngFor="let link of socialLinkList"
     [href]="link.link"
