@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { socialLinkList } from 'src/app/shared/components/social-block/social-block.component';
 
 @Component({
   selector: 'app-footer',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   currentYear = new Date().getFullYear();
+  socialLinkList = socialLinkList;
 }

@@ -17,14 +17,19 @@
   &__tiles {
     margin-top: 48px;
 
-    display: grid;
-    grid-row-gap: 36px;
-    grid-column-gap: 40px;
-    grid-template-rows: 384px 384px 260px;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
 
-    & > *:last-child {
-      grid-column: span 3;
+    &-item {
+      @include colWidth(3);
+      aspect-ratio: 1 / 1;
+
+      &._full-width {
+        @include colWidth(6);
+        aspect-ratio: 560 / 260;
+      }
     }
   }
 }

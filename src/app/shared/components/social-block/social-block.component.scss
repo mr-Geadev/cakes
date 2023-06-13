@@ -1,23 +1,24 @@
 .social-block {
   display: flex;
-  position: absolute;
   flex-direction: column;
   justify-content: space-between;
-  padding: 34px 17px;
-  top: 26%;
+  gap: 30px;
 
-  background-color: rgba(106, 137, 132, 0.36);
-  backdrop-filter: blur(26.166px);
-  border-radius: 0 24px 24px 0;
-
-  a {
-    height: 39px;
-    &:not(:first-child) {
-      margin-top: 30px;
-    }
+  &._horizontal {
+    flex-direction: row;
+    gap: 12px;
   }
+
+  &._glass {
+    padding: 34px 17px;
+    background-color: rgba(106, 137, 132, 0.36);
+    backdrop-filter: blur(26.166px);
+    border-radius: 0 24px 24px 0;
+  }
+
   &-item {
     width: 39px;
-    height: 39px;
+    display: block;
+    aspect-ratio: 1 / 1;
   }
 }

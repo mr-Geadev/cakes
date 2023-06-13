@@ -10,6 +10,7 @@ import { PortfolioComponent } from 'src/app/pages/home/components/portfolio/port
 import { ReviewsComponent } from 'src/app/pages/home/components/reviews/reviews.component';
 import { SpecialOfferComponent } from 'src/app/pages/home/components/special-offer/special-offer.component';
 import { HomeComponent } from 'src/app/pages/home/home.component';
+import { InputComponent } from 'src/app/shared/components/input/input.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import {ReactiveFormsModule} from "@angular/forms";
 
@@ -27,15 +28,16 @@ import {ReactiveFormsModule} from "@angular/forms";
     ReviewsComponent,
     CallbackFormComponent,
   ],
-  imports: [
-      CommonModule,
-      RouterModule.forChild([{
-          path: '',
-          component: HomeComponent,
-      }]),
-      SharedModule,
-      ReactiveFormsModule,
-  ],
+	imports: [
+		CommonModule,
+		RouterModule.forChild([{
+			path: '',
+			component: HomeComponent,
+		}]),
+		SharedModule,
+		ReactiveFormsModule,
+		InputComponent,
+	],
   providers: [],
   exports: [],
 })

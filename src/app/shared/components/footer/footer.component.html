@@ -12,12 +12,10 @@
         Логотип
       </div>
 
-      <div class="footer__socials">
-        <img class="footer__socials-item" src="assets/images/icons/vk-circle.svg" alt="vk">
-        <img class="footer__socials-item" src="assets/images/icons/telegram-circle.svg" alt="telegram">
-        <img class="footer__socials-item" src="assets/images/icons/whatsapp-circle.svg" alt="whatsapp">
-        <img class="footer__socials-item" src="assets/images/icons/viber-circle.svg" alt="viber">
-      </div>
+      <app-social-block
+        class="footer__socials"
+        [horizontal]="true"
+      ></app-social-block>
     </div>
 
     <div class="footer__contacts">

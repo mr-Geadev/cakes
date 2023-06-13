@@ -1,0 +1,70 @@
+@import "colors";
+@import "typography";
+@import "animation";
+
+.input {
+  @include button2regular();
+  width: 100%;
+  height: 44px;
+
+  background: $whiteBg;
+  border-radius: 80px;
+
+  padding: 12px 24px;
+
+  &.ng-invalid.ng-touched {
+    border: red 1px solid;
+  }
+
+  &-container {
+    padding-bottom: 20px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+
+    &-icon {
+      margin-right: 8px;
+      width: 16px;
+      display: inline-block;
+      aspect-ratio: 1 / 1;
+      background-image: url("/assets/images/icons/required-icon.svg");
+
+      &._hidden {
+        visibility: hidden;
+      }
+    }
+
+    &-message {
+      @include body5regular();
+    }
+  }
+
+  &__error {
+    opacity: 0;
+    position: absolute;
+    @include baseAnimation('opacity');
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    &._visible {
+      opacity: 1;
+    }
+
+    &-icon {
+      margin-right: 8px;
+      width: 16px;
+      display: inline-block;
+      aspect-ratio: 1 / 1;
+      background-image: url("/assets/images/icons/error-icon.svg");
+    }
+
+    &-message {
+      @include button2regular;
+      color: $red;
+    }
+  }
+}
