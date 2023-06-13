@@ -24,40 +24,22 @@
       (ngSubmit)="submit()"
       novalidate
     >
-      <div class="callback__form-input">
-        <input
-          type="text"
-          class="input"
-          placeholder="Ваше имя"
-          formControlName="name"
-        >
-        <div
-          class="input__error-message"
-          *ngIf="shouldShowErrorForFiled('name')"
-        >
-          Поле обязательно для заполнения
-        </div>
-      </div>
+      <app-input
+        class="callback__form-input"
+        placeholder="Ваше имя"
+        [control]="callbackForm.controls.name"
+      ></app-input>
 
-      <div class="callback__form-input">
-        <input
-          type="text"
-          class="input"
-          placeholder="Номер телефона"
-          formControlName="phone"
-        >
-        <div
-          class="input__error-message"
-          *ngIf="shouldShowErrorForFiled('phone')"
-        >
-          Некорректный номер телефона
-        </div>
-      </div>
+      <app-input
+        class="callback__form-input"
+        placeholder="Номер телефона"
+        [control]="callbackForm.controls.phone"
+      ></app-input>
 
       <button
         type="submit"
         class="callback__form-btn btn _black"
-        [disabled]="callbackForm.invalid"
+        [disabled]="isShowErrors && callbackForm.invalid"
       >
         Отправить
       </button>

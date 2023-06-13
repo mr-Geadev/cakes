@@ -1,5 +1,10 @@
-import {Component, OnInit} from '@angular/core';
-import {FormGroup, FormControl, Validators, FormBuilder} from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+
+type FormValue =  {
+  name: FormControl<string>,
+  phone: FormControl<string>;
+}
 
 @Component({
   selector: 'app-callback-form',
@@ -7,18 +12,23 @@ import {FormGroup, FormControl, Validators, FormBuilder} from '@angular/forms';
   styleUrls: ['./callback-form.component.scss']
 })
 export class CallbackFormComponent {
-  callbackForm : FormGroup= new FormGroup({
-    "name": new FormControl<string>("", Validators.required),
-    "phone": new FormControl<string>("", [Validators.pattern("[0-9]{11}")])
+  isShowErrors = false;
+
+  callbackForm : FormGroup<FormValue> = new FormGroup<FormValue>({
+    name: new FormControl<string>("", { nonNullable: true, validators: Validators.required }),
+    phone: new FormControl("", { nonNullable: true, validators: [Validators.required, Validators.pattern("[0-9]{11}")]})
   })
 
+  constructor() {}
+
   submit(){
+    if (this.callbackForm.invalid) {
+      this.callbackForm.markAllAsTouched();
+      this.isShowErrors = true;
+      return;
+    }
+
     console.log(this.callbackForm.value);
     this.callbackForm.reset();
-  }
-
-  shouldShowErrorForFiled(fieldName: string): boolean {
-    const control = this.callbackForm.controls[fieldName];
-    return control.invalid && control.touched
   }
 }
