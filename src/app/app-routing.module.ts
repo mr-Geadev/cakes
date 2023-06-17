@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'delivery',
     loadChildren: () => import('./pages/delivery/delivery.module').then(m => m.DeliveryModule)
+  },
+  {
+    path: 'catalog',
+    loadChildren: () => import('src/app/pages/catalog/catalog.page.module').then(m => m.CatalogPageModule)
   }
 ];
 
