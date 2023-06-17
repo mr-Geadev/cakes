@@ -3,7 +3,7 @@
 @import "typography";
 
 :host {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -23,51 +23,50 @@
   }
 
   &__logo {
-    @include colWidth(2);
+    width: 170px;
+    height: 40px;
     margin-left: 0;
     margin-right: auto;
   }
 
-  &__menu-bar {
-    margin-right: 32px;
-
-    & > *:not(:first-child) {
-      margin-left: 48px;
-    }
-  }
+  &__menu {}
 
   &__phone {
-    @include body3semibold;
+    @include body3regular();
+    margin-left: 82px;
     color: $whiteBg;
   }
 
   &__make-order {
     margin-left: 36px;
-    width: 181px;
+    @include colWidth(2);
   }
 }
 
 .menu {
   display: flex;
   align-items: center;
-
-  & > *:not(:first-child) {
-    margin-left: 48px;
-  }
+  column-gap: 33px;
 
   &__item {
-    @include body5regular;
+    @include body3regular();
+    cursor: pointer;
   }
 }
 
 .dropdown {
 
   &__title {
-    @include body5medium;
+    @include body3regular();
+    display: flex;
+    align-items: center;
 
     &-arrow {
-      margin-bottom: 1px;
+      margin-left: 4px;
       transition: transform .2s ease-in-out;
+      width: 24px;
+      height: 24px;
+      object-fit: scale-down;
     }
   }
 
