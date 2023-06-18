@@ -3,10 +3,10 @@ import { CategoryList } from 'src/app/categories';
 
 @Component({
   selector: 'app-catalog',
-  templateUrl: './catalog.component.html',
-  styleUrls: ['./catalog.component.scss']
+  templateUrl: './categories-list.component.html',
+  styleUrls: ['./categories-list.component.scss']
 })
-export class CatalogComponent {
+export class CategoriesListComponent {
 
   readonly CategoryList = CategoryList;
   readonly test = []

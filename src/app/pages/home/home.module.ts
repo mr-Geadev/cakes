@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AboutComponent } from 'src/app/pages/home/components/about/about.component';
 import { AdvantagesComponent } from 'src/app/pages/home/components/advantages/advantages.component';
 import { BannerComponent } from 'src/app/pages/home/components/banner/banner.component';
-import { CatalogComponent } from 'src/app/pages/home/components/catalog/catalog.component';
+import { CategoriesListComponent } from 'src/app/pages/home/components/catalog/categories-list.component';
 import { PortfolioComponent } from 'src/app/pages/home/components/portfolio/portfolio.component';
 import { ReviewsComponent } from 'src/app/pages/home/components/reviews/reviews.component';
 import { SpecialOfferComponent } from 'src/app/pages/home/components/special-offer/special-offer.component';
@@ -19,7 +19,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 
     AboutComponent,
     BannerComponent,
-    CatalogComponent,
+    CategoriesListComponent,
     AdvantagesComponent,
     PortfolioComponent,
     SpecialOfferComponent,
