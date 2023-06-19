@@ -8,6 +8,7 @@ import { GalleryComponent } from 'src/app/shared/components/gallery/gallery.comp
 import { HeaderComponent } from 'src/app/shared/components/header/header.component';
 import { SocialBlockComponent } from "./components/social-block/social-block.component";
 import { ProductComponent } from "./components/product/product.component";
+import {ProductGalleryComponent} from "./components/product-gallery/product-gallery.component";
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { ProductComponent } from "./components/product/product.component";
     ReviewCardComponent,
     GalleryComponent,
     SocialBlockComponent,
-    ProductComponent
+    ProductComponent,
+    ProductGalleryComponent
   ],
   exports: [
     HeaderComponent,
