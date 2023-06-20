@@ -7,6 +7,8 @@ import { FooterComponent } from 'src/app/shared/components/footer/footer.compone
 import { GalleryComponent } from 'src/app/shared/components/gallery/gallery.component';
 import { HeaderComponent } from 'src/app/shared/components/header/header.component';
 import { SocialBlockComponent } from "./components/social-block/social-block.component";
+import { ProductComponent } from "./components/product/product.component";
+import {ProductGalleryComponent} from "./components/product-gallery/product-gallery.component";
 
 @NgModule({
   imports: [
@@ -19,7 +21,9 @@ import { SocialBlockComponent } from "./components/social-block/social-block.com
     CategoryTileComponent,
     ReviewCardComponent,
     GalleryComponent,
-    SocialBlockComponent
+    SocialBlockComponent,
+    ProductComponent,
+    ProductGalleryComponent
   ],
   exports: [
     HeaderComponent,
@@ -28,6 +32,7 @@ import { SocialBlockComponent } from "./components/social-block/social-block.com
     ReviewCardComponent,
     GalleryComponent,
     SocialBlockComponent,
+    ProductComponent,
   ],
 })
 export class SharedModule {}
