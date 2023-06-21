@@ -1,0 +1,46 @@
+@import "typography";
+
+.catalog-header {
+  position: relative;
+  padding-top: 8vh;
+  padding-bottom: 72px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__background {
+    color: #94C5BD;
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__line {
+    width: 100%;
+    top: 9vh;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  &__illustration {
+    z-index: 5;
+    display: block;
+    width: 28vw;
+  }
+
+  &__title {
+    margin-top: 8vh;
+    @include heading2();
+  }
+
+  &__text {
+    margin-top: 16px;
+    @include body2l();
+    text-align: center;
+    max-width: 676px;
+  }
+}

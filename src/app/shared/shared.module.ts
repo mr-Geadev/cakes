@@ -1,7 +1,8 @@
-import { NgForOf } from '@angular/common';
+import { NgForOf, NgIf } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AdvantagesComponent } from 'src/app/shared/components/advantages/advantages.component';
 import { CallbackFormComponent } from 'src/app/shared/components/callback-form/callback-form.component';
 import { CategoryTileComponent } from 'src/app/shared/components/category-tile/category-tile.component';
 import { InputComponent } from 'src/app/shared/components/input/input.component';
@@ -17,6 +18,7 @@ import { SocialBlockComponent } from "./components/social-block/social-block.com
     InputComponent,
     ReactiveFormsModule,
     NgForOf,
+    NgIf,
   ],
   declarations: [
     HeaderComponent,
@@ -26,6 +28,7 @@ import { SocialBlockComponent } from "./components/social-block/social-block.com
     GalleryComponent,
     SocialBlockComponent,
     CallbackFormComponent,
+    AdvantagesComponent,
   ],
   exports: [
     HeaderComponent,
@@ -35,6 +38,7 @@ import { SocialBlockComponent } from "./components/social-block/social-block.com
     GalleryComponent,
     SocialBlockComponent,
     CallbackFormComponent,
+    AdvantagesComponent,
   ],
 })
 export class SharedModule {}

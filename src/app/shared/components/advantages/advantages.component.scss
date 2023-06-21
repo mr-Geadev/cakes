@@ -17,6 +17,15 @@
     background-size: contain;
     background-position: top center;
 
+    &._without-background {
+      background: none;
+    }
+
+    &._without-background &-container {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
     &-container {
       margin-top: 48px;
       padding-top: 36px;
@@ -36,8 +45,8 @@
   align-items: center;
 
   &__illustration {
-    height: 196px;
     width: 196px;
+    aspect-ratio: 1 / 1;
     object-fit: scale-down;
   }
 
@@ -52,5 +61,32 @@
     @include body5regular();
     text-align: center;
     max-width: 280px;
+  }
+}
+
+._compactVersion {
+  &.advantages {
+    padding: 0;
+  }
+
+  .advantages {
+    &__list {
+      background: none;
+
+      &-container {
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+  }
+
+  .advantage {
+    &__illustration {
+      width: 160px;
+    }
+
+    &__title {
+      margin-top: 24px;
+    }
   }
 }

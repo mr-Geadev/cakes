@@ -1,6 +1,8 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { CatalogArticleComponent } from 'src/app/pages/catalog/catalog-article/catalog-article.component';
+import { CatalogHeaderComponent } from 'src/app/pages/catalog/catalog-header/catalog-header.component';
+import { CatalogRoutingPageModels } from 'src/app/pages/catalog/catalog-routing.page.models';
 import { CatalogPage } from 'src/app/pages/catalog/catalog.page';
 import { ProductItemComponent } from 'src/app/pages/catalog/product-item/product-item.component';
 import { ProductListComponent } from 'src/app/pages/catalog/product-list/product-list.component';
@@ -12,19 +14,18 @@ import { ReactiveFormsModule } from "@angular/forms";
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild([{
-      path: '**',
-      component: CatalogPage,
-      children: []
-    }]),
+    CatalogRoutingPageModels,
     SharedModule,
     ReactiveFormsModule,
     InputComponent,
+    NgOptimizedImage,
   ],
   declarations: [
     CatalogPage,
     ProductListComponent,
     ProductItemComponent,
+    CatalogHeaderComponent,
+    CatalogArticleComponent,
   ],
   providers: [],
   exports: [],
