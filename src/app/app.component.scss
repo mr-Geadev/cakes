@@ -1,8 +1,18 @@
 @import "ui-kit/colors";
 @import "ui-kit/typography";
 @import "ui-kit/grid";
+@import "ui-kit/animation";
 
 .social-block {
-  position: absolute;
+  position: fixed;
   top: 26%;
+  left: -10px;
+  z-index: 100;
+  transform: scale(0.9);
+  @include baseAnimation('transform, left');
+
+  &:hover {
+    left: 0px;
+    transform: scale(1);
+  }
 }

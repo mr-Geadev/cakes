@@ -1,5 +1,5 @@
-@import "grid";
-@import "typography";
+@import "../../../ui-kit/grid";
+@import "../../../ui-kit/typography";
 
 .callback {
   padding: 224px 0 120px;
@@ -21,6 +21,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    width: 30vw;
   }
 
   &__title {

@@ -2,17 +2,14 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AboutComponent } from 'src/app/pages/home/components/about/about.component';
-import { AdvantagesComponent } from 'src/app/pages/home/components/advantages/advantages.component';
 import { BannerComponent } from 'src/app/pages/home/components/banner/banner.component';
-import { CallbackFormComponent } from 'src/app/pages/home/components/callback-form/callback-form.component';
-import { CatalogComponent } from 'src/app/pages/home/components/catalog/catalog.component';
+import { CategoriesListComponent } from 'src/app/pages/home/components/catalog/categories-list.component';
 import { PortfolioComponent } from 'src/app/pages/home/components/portfolio/portfolio.component';
 import { ReviewsComponent } from 'src/app/pages/home/components/reviews/reviews.component';
 import { SpecialOfferComponent } from 'src/app/pages/home/components/special-offer/special-offer.component';
 import { HomeComponent } from 'src/app/pages/home/home.component';
-import { InputComponent } from 'src/app/shared/components/input/input.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-import {ReactiveFormsModule} from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
 
 
 @NgModule({
@@ -21,12 +18,10 @@ import {ReactiveFormsModule} from "@angular/forms";
 
     AboutComponent,
     BannerComponent,
-    CatalogComponent,
-    AdvantagesComponent,
+    CategoriesListComponent,
     PortfolioComponent,
     SpecialOfferComponent,
     ReviewsComponent,
-    CallbackFormComponent,
   ],
 	imports: [
 		CommonModule,
@@ -36,7 +31,6 @@ import {ReactiveFormsModule} from "@angular/forms";
 		}]),
 		SharedModule,
 		ReactiveFormsModule,
-		InputComponent,
 	],
   providers: [],
   exports: [],

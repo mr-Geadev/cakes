@@ -1,0 +1,35 @@
+<div class="catalog-article" *ngIf="(content | async) as content">
+  <div class="catalog-article__container container">
+    <img
+      srcset="
+        assets/images/catalog/{{content.illustrationFileName}}.png 1x,
+        assets/images/catalog/{{content.illustrationFileName}}@2x.png 2x
+      "
+      [alt]="content.title"
+      class="catalog-article__illustration"
+    >
+
+    <div class="catalog-article__content">
+      <h2 class="catalog-article__title">
+        {{ content.title }}
+      </h2>
+
+      <h4 class="catalog-article__subtitle">
+        {{ content.subtitle }}
+      </h4>
+
+      <p class="catalog-article__text">
+        {{ content.text }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<app-advantages
+  class="catalog-article__advantages"
+  [compactVersion]="true"
+></app-advantages>
+
+<h4 class="catalog-article__product-title">
+  Продукция
+</h4>

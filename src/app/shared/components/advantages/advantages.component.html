@@ -1,5 +1,5 @@
-<div class="advantages">
-  <div class="advantages__container container">
+<div class="advantages" [class._compactVersion]="compactVersion">
+  <div class="advantages__container container" *ngIf="!compactVersion">
     <h2 class="advantages__title">
       Преимущества
     </h2>
@@ -8,19 +8,19 @@
   <div class="advantages__list">
     <div class="advantages__list-container container">
       <div class="advantages__list-item advantage">
-        <img class="advantage__illustration" src="assets/images/home/advantage-illustration-1.svg" alt="">
+        <img class="advantage__illustration" src="../../../../assets/images/home/advantage-illustration-1.svg" alt="">
         <h4 class="advantage__title">Преимущество 1</h4>
         <p class="advantage__text">Следует отметить, что дальнейшее развитие различных форм деятельности позволяет </p>
       </div>
 
       <div class="advantages__list-item advantage">
-        <img class="advantage__illustration" src="assets/images/home/advantage-illustration-2.svg" alt="">
+        <img class="advantage__illustration" src="../../../../assets/images/home/advantage-illustration-2.svg" alt="">
         <h4 class="advantage__title">Преимущество 2</h4>
         <p class="advantage__text">Следует отметить, что дальнейшее развитие различных форм деятельности позволяет </p>
       </div>
 
       <div class="advantages__list-item advantage">
-        <img class="advantage__illustration" src="assets/images/home/advantage-illustration-3.svg" alt="">
+        <img class="advantage__illustration" src="../../../../assets/images/home/advantage-illustration-3.svg" alt="">
         <h4 class="advantage__title">Преимущество 3</h4>
         <p class="advantage__text">Следует отметить, что дальнейшее развитие различных форм деятельности позволяет </p>
       </div>

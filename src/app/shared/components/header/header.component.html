@@ -1,10 +1,12 @@
 <header class="header">
   <div class="header__container container">
-    <div class="header__logo logo">
-      Logo
-    </div>
+    <a routerLink="/" class="header__logo logo">
+      <img src="/assets/images/logo-full.svg" alt="Логотип">
+    </a>
 
     <div class="header__menu menu">
+      <div class="menu__item">Обо мне</div>
+
       <div class="menu__item dropdown">
         <div class="dropdown__title">
           Работы
@@ -15,27 +17,29 @@
           <a href="#" class="dropdown__content-item _width_182px" >Отзывы</a>
         </div>
       </div>
+
       <div class="menu__item dropdown">
         <div class="dropdown__title">
           Каталог
           <img src="assets/images/icons/arrow-down.svg" class="dropdown__title-arrow" alt="Стрелка вниз">
         </div>
         <div class="dropdown__content">
-          <a href="#" class="dropdown__content-item" >Торты на заказ</a>
-          <a href="#" class="dropdown__content-item" >Классические торты</a>
-          <a href="#" class="dropdown__content-item" >Свадебные торты</a>
-          <a href="#" class="dropdown__content-item" >Десерты</a>
-          <a href="#" class="dropdown__content-item" >Хлеб</a>
-          <a href="#" class="dropdown__content-item" >Выпечка</a>
-          <a href="#" class="dropdown__content-item" >Диетическая продукция</a>
+          <a routerLink="catalog" class="dropdown__content-item" >Торты на заказ</a>
+          <a routerLink="catalog/classic" class="dropdown__content-item" >Классические торты</a>
+          <a routerLink="catalog" class="dropdown__content-item" >Свадебные торты</a>
+          <a routerLink="catalog/desserts" class="dropdown__content-item" >Десерты</a>
+          <a routerLink="catalog/bread" class="dropdown__content-item" >Хлеб</a>
+          <a routerLink="catalog/bakery" class="dropdown__content-item" >Выпечка</a>
+          <a routerLink="catalog/diet" class="dropdown__content-item" >Диетическая продукция</a>
         </div>
       </div>
-      <div class="menu__item">Доставка и оплата</div>
 
-      <a href="tel:+79998887766" class="header__phone">
-        +7 (900) 000 00 00
-      </a>
+      <a routerLink="/delivery" class="menu__item">Доставка и оплата</a>
     </div>
+
+    <a href="tel:+79998887766" class="header__phone">
+      +7 (900) 000 00 00
+    </a>
 
     <button class="header__make-order btn _beige">
       Заказать

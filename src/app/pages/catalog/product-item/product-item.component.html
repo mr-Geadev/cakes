@@ -1,0 +1,12 @@
+<div class="product">
+  <div class="product__image-wrapper">
+    <img [src]="'/assets/images-mocks/' + product.mainImageUrl" [alt]="product.name">
+  </div>
+
+  <h4 class="product__name">
+    {{ product.name }}
+  </h4>
+  <p class="product__price">
+    {{ product.price}} ₽/{{ product.priceUnit }}
+  </p>
+</div>

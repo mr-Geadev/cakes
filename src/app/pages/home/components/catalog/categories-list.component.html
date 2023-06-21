@@ -1,13 +1,13 @@
-<div class="catalog">
-  <div class="catalog__container container">
-    <h2 class="catalog__title">
+<div class="categories">
+  <div class="categories__container container">
+    <h2 class="categories__title">
       Каталог
     </h2>
 
-    <div class="catalog__tiles">
+    <div class="categories__tiles">
       <app-category-tile
         *ngFor="let category of CategoryList;"
-        class="catalog__tiles-item"
+        class="categories__tiles-item"
         [category]="category"
         [class._full-width]="category.index === 'to-order'"
       ></app-category-tile>
