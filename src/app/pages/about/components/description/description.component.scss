@@ -1,0 +1,37 @@
+@import "typography";
+
+.description {
+  padding-top: 188px;
+  padding-bottom: 160px;
+
+  &__section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__photo {
+    object-fit:none;
+  }
+
+  &__about {
+    margin-left: 43px;
+  }
+
+  &__title {
+    @include heading2;
+  }
+
+  &__subtitle {
+    @include body3semibold;
+    margin-top: 24px;
+  }
+
+  &__desc {
+    @include body3regular;
+    margin-top: 24px;
+  }
+}
+
+._margin_top_64px {
+  margin-top: 64px;
+}
