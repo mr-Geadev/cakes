@@ -1,0 +1,48 @@
+@import "typography";
+@import "grid";
+
+:host {
+  padding-top: 72px;
+  padding-bottom: 48px;
+  display: block;
+}
+
+.catalog-article {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__illustration {
+    @include colWidth(6);
+  }
+
+  &__content {
+    @include colWidth(6);
+  }
+
+  &__title {
+    @include heading2();
+  }
+
+  &__subtitle {
+    margin-top: 24px;
+    @include body3semibold();
+  }
+
+  &__text {
+    margin-top: 24px;
+    @include body3regular();
+  }
+
+  &__advantages {
+    margin-top: 64px;
+    display: block;
+  }
+
+  &__product-title {
+    margin-top: 64px;
+    @include heading2();
+    text-align: center;
+  }
+}

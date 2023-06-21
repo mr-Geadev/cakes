@@ -1,7 +1,11 @@
-import { NgForOf } from '@angular/common';
+import { NgForOf, NgIf } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AdvantagesComponent } from 'src/app/shared/components/advantages/advantages.component';
+import { CallbackFormComponent } from 'src/app/shared/components/callback-form/callback-form.component';
 import { CategoryTileComponent } from 'src/app/shared/components/category-tile/category-tile.component';
+import { InputComponent } from 'src/app/shared/components/input/input.component';
 import { ReviewCardComponent } from 'src/app/shared/components/review-card/review-card.component';
 import { FooterComponent } from 'src/app/shared/components/footer/footer.component';
 import { GalleryComponent } from 'src/app/shared/components/gallery/gallery.component';
@@ -13,7 +17,10 @@ import {ProductGalleryComponent} from "./components/product-gallery/product-gall
 @NgModule({
   imports: [
     RouterModule,
+    InputComponent,
+    ReactiveFormsModule,
     NgForOf,
+    NgIf,
   ],
   declarations: [
     HeaderComponent,
@@ -22,6 +29,8 @@ import {ProductGalleryComponent} from "./components/product-gallery/product-gall
     ReviewCardComponent,
     GalleryComponent,
     SocialBlockComponent,
+    CallbackFormComponent,
+    AdvantagesComponent,
     ProductComponent,
     ProductGalleryComponent
   ],
@@ -32,6 +41,8 @@ import {ProductGalleryComponent} from "./components/product-gallery/product-gall
     ReviewCardComponent,
     GalleryComponent,
     SocialBlockComponent,
+     CallbackFormComponent,
+    AdvantagesComponent,
     ProductComponent,
   ],
 })
