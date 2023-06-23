@@ -1,20 +1,23 @@
 @import "typography";
+@import "grid";
 
 .description {
   padding-top: 188px;
-  padding-bottom: 160px;
 
   &__section {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
   }
 
   &__photo {
+    @include colWidth(6);
     object-fit:none;
   }
 
   &__about {
-    margin-left: 43px;
+    @include colWidth(6);
   }
 
   &__title {
@@ -30,8 +33,4 @@
     @include body3regular;
     margin-top: 24px;
   }
-}
-
-._margin_top_64px {
-  margin-top: 64px;
 }

@@ -1,6 +1,7 @@
 @import "typography";
 
 .certificates {
+  padding-bottom: 161px;
 
   &__title {
     @include heading2;
@@ -24,9 +25,7 @@
 
 .carousel {
   &__buttons {
-    margin-bottom: 100px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -39,27 +38,10 @@
     margin-left: 25px;
     background-image: url("/assets/images/product/product-arrow.svg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    cursor: pointer;
 
-    &_left {
-      transform: rotate(-0deg);
-      margin-left: 0;
-      margin-right: 25px;
-
-      &:hover {
-        transform: rotate(-180deg);
-      }
-    }
-
-    &_right {
-      transform: rotate(-180deg);
-
-      &:hover {
-        transform: rotate(-0deg);
-      }
-    }
-
-    &:hover {
+    &:hover, &:focus {
       background-image: url("/assets/images/product/product-arrow-hover.svg");
       background-color: $lightRed;
     }
@@ -79,8 +61,26 @@
       margin-left: 16px;
     }
 
-    &:hover {
+    &:hover, &:focus {
       background-color: $lightRed;
     }
+  }
+}
+
+._left {
+  transform: rotate(-0deg);
+  margin-left: 0;
+  margin-right: 25px;
+
+  &:hover, &:focus {
+    transform: rotate(-180deg);
+  }
+}
+
+._right {
+  transform: rotate(-180deg);
+
+  &:hover, &:focus {
+    transform: rotate(-0deg);
   }
 }
