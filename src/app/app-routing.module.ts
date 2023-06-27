@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'catalog',
     loadChildren: () => import('src/app/pages/catalog/catalog.page.module').then(m => m.CatalogPageModule)
+  },
+  {
+    path: 'wedding',
+    loadChildren: () => import('src/app/pages/wedding/wedding.module').then(m => m.WeddingModule)
   }
 ];
 
