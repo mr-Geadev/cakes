@@ -1,0 +1,36 @@
+@import "typography";
+@import "grid";
+
+.description {
+  padding-top: 188px;
+
+  &__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__photo {
+    @include colWidth(6);
+    object-fit:none;
+  }
+
+  &__about {
+    @include colWidth(6);
+  }
+
+  &__title {
+    @include heading2;
+  }
+
+  &__subtitle {
+    @include body3semibold;
+    margin-top: 24px;
+  }
+
+  &__desc {
+    @include body3regular;
+    margin-top: 24px;
+  }
+}
