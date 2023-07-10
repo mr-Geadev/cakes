@@ -1,0 +1,86 @@
+@import "typography";
+
+.certificates {
+  padding-bottom: 161px;
+
+  &__title {
+    @include heading2;
+    margin-top: 48px;
+    text-align: center;
+  }
+
+  &__carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 48px;
+  }
+
+  &__item {
+    max-width: 360px;
+    object-fit:none;
+  }
+}
+
+.carousel {
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  &-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 25px;
+    background-image: url("/assets/images/product/product-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      background-image: url("/assets/images/product/product-arrow-hover.svg");
+      background-color: $lightRed;
+    }
+  }
+
+  &-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: $beige;
+
+    &_active {
+      background-color: $lightRed;
+    }
+
+    &:not(:first-child) {
+      margin-left: 16px;
+    }
+
+    &:hover, &:focus {
+      background-color: $lightRed;
+    }
+  }
+}
+
+._left {
+  transform: rotate(-0deg);
+  margin-left: 0;
+  margin-right: 25px;
+
+  &:hover, &:focus {
+    transform: rotate(-180deg);
+  }
+}
+
+._right {
+  transform: rotate(-180deg);
+
+  &:hover, &:focus {
+    transform: rotate(-0deg);
+  }
+}
