@@ -23,6 +23,9 @@ const routes: Routes = [
     loadChildren: () => import('src/app/pages/catalog/catalog.page.module').then(m => m.CatalogPageModule)
   },
   {
+    path: 'order',
+    loadChildren: () => import('src/app/pages/order/custom.module').then(m => m.CustomModule)
+  }, {
     path: 'wedding',
     loadChildren: () => import('src/app/pages/wedding/wedding.module').then(m => m.WeddingModule)
   }
