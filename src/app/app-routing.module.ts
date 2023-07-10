@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: 'order',
-    loadChildren: () => import('src/app/pages/order/order.module').then(m => m.OrderModule)
+    loadChildren: () => import('src/app/pages/order/custom.module').then(m => m.CustomModule)
   }
 ];
 

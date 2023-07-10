@@ -2,31 +2,29 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { OrderComponent } from "./order.component";
+import { CustomComponent } from "./custom.component";
 import { BannerComponent } from "./components/banner/banner.component";
-import { TermsComponent } from "./components/terms/terms.component";
-import { DescComponent } from "./components/desc/desc.component";
+import { DescriptionComponent } from "./components/description/description.component";
 
 
 @NgModule({
   declarations: [
-    OrderComponent,
+    CustomComponent,
 
     BannerComponent,
-    TermsComponent,
-    DescComponent
+    DescriptionComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild([{
       path: '',
-      component: OrderComponent,
+      component: CustomComponent,
     }]),
     SharedModule,
   ],
   providers: [],
   exports: [],
 })
-export class OrderModule {
+export class CustomModule {
 
 }
