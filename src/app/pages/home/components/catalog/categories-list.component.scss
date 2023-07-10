@@ -1,0 +1,35 @@
+@import "grid";
+@import "typography";
+
+.categories {
+  background: linear-gradient(180deg, #FDFDFD 0%, #FEF1EB 46.56%);
+
+  &__container {
+    padding: 80px 0 160px;
+  }
+
+  &__title {
+    @include heading2;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__tiles {
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    &-item {
+      @include colWidth(3);
+      aspect-ratio: 1 / 1;
+
+      &._full-width {
+        @include colWidth(6);
+        aspect-ratio: 560 / 260;
+      }
+    }
+  }
+}

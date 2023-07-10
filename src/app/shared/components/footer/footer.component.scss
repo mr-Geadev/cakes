@@ -36,16 +36,12 @@
     align-items: center;
   }
 
+  &__logo img {
+    width: 200px;
+  }
+
   &__socials {
     margin-top: 42px;
-    display: flex;
-    width: 152px;
-    justify-content: space-between;
-
-    &-item {
-      width: 28px;
-      height: 28px;
-    }
   }
 
   &__contacts {

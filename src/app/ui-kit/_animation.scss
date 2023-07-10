@@ -1,0 +1,5 @@
+@mixin baseAnimation($properties) {
+  transition-property: #{$properties};
+  transition-timing-function: ease-in-out;
+  transition-duration: .2s;
+}

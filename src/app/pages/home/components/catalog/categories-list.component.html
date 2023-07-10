@@ -1,0 +1,16 @@
+<div class="categories">
+  <div class="categories__container container">
+    <h2 class="categories__title">
+      Каталог
+    </h2>
+
+    <div class="categories__tiles">
+      <app-category-tile
+        *ngFor="let category of CategoryList;"
+        class="categories__tiles-item"
+        [category]="category"
+        [class._full-width]="category.index === 'to-order'"
+      ></app-category-tile>
+    </div>
+  </div>
+</div>

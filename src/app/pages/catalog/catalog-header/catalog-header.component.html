@@ -1,0 +1,30 @@
+<div class="catalog-header" *ngIf="(content | async) as content">
+  <svg
+    [style.color]="content.backgroundColor"
+    class="catalog-header__background" viewBox="0 0 1920 546" preserveAspectRatio="xMinYMax slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 392.14L64 430.6C128 469.061 256 545.982 384 545.982C512 545.982 640 469.061 768 411.37C896 353.679 1024 315.219 1152 334.449C1280 353.679 1408 430.6 1536 459.446C1664 488.291 1792 469.061 1856 459.446L1920 449.831V-141H1856C1792 -141 1664 -141 1536 -141C1408 -141 1280 -141 1152 -141C1024 -141 896 -141 768 -141C640 -141 512 -141 384 -141C256 -141 128 -141 64 -141H0V392.14Z" fill="currentColor"/>
+  </svg>
+
+  <img
+    class="catalog-header__line"
+    src="/assets/images/horizontal-line-red.svg"
+  >
+
+  <img
+    class="catalog-header__illustration"
+    [style.margin-left.px]="content.illustrationMargin"
+    srcset="
+      assets/images/catalog/{{content.illustrationFileName}}.png 1x,
+      assets/images/catalog/{{content.illustrationFileName}}@2x.png 2x
+    "
+    [alt]="content.title"
+  >
+
+  <h2 class="catalog-header__title">
+    {{ content.title }}
+  </h2>
+
+  <p class="catalog-header__text">
+    {{ content.text }}
+  </p>
+</div>

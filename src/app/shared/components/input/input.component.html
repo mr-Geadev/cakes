@@ -1,0 +1,36 @@
+<div class="input-container">
+  <label *ngIf="label" class="input__label" [for]="id">
+    <span
+      class="input__label-icon"
+      [class._hidden]="!control.hasValidator(Validators.required)"
+    ></span>
+
+    <span class="input__label-message">
+      {{ label }}
+    </span>
+  </label>
+
+  <input
+    [id]="id"
+    type="text"
+    class="input"
+    [placeholder]="placeholder"
+    [formControl]="control"
+  >
+
+  <div
+    class="input__error"
+    [class._visible]="control.touched && control.hasError('required')"
+  >
+    <span class="input__error-icon"></span>
+    <span class="input__error-message">Поле обязательно для заполнения</span>
+  </div>
+
+  <div
+    class="input__error"
+    [class._visible]="control.touched && control.hasError('pattern')"
+  >
+    <span class="input__error-icon"></span>
+    <span class="input__error-message">Значение введено неверно</span>
+  </div>
+</div>

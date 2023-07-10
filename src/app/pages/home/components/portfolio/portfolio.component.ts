@@ -15,6 +15,8 @@ export class PortfolioComponent {
     { preview: 'photo_4.png', retinaSize: 'photo_4@2x.png' },
     { preview: 'photo_5.png', retinaSize: 'photo_5@2x.png' },
     { preview: 'photo_6.png', retinaSize: 'photo_6@2x.png' },
+    { preview: 'photo_7.png', retinaSize: 'photo_7@2x.png' },
+    { preview: 'photo_8.png', retinaSize: 'photo_8@2x.png' },
   ]
 
 }
