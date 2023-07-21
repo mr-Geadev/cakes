@@ -23,7 +23,7 @@ const routes: Routes = [
     loadChildren: () => import('src/app/pages/catalog/catalog.page.module').then(m => m.CatalogPageModule)
   },
   {
-    path: 'order',
+    path: 'custom',
     loadChildren: () => import('src/app/pages/order/custom.module').then(m => m.CustomModule)
   }, {
     path: 'wedding',
