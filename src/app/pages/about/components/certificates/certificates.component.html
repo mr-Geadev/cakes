@@ -2,15 +2,25 @@
   <div class="certificates__container container">
     <h1 class="certificates__title">Сертификаты</h1>
     <div class="certificates__carousel">
-      <img class="certificates__item" src="assets/images/about/about-certificat-1@1x.png" alt="Сертификат 1">
-      <img class="certificates__item" src="assets/images/about/about-certificat-2@1x.png" alt="Сертификат 2">
-      <img class="certificates__item" src="assets/images/about/about-certificat-3@1x.png" alt="Сертификат 3">
-    </div>
-    <div class="carousel__buttons">
-      <div class="carousel-arrow _left"></div>
-      <div class="carousel-circle carousel-circle_active"></div>
-      <div class="carousel-circle"></div>
-      <div class="carousel-arrow _right"></div>
+      <img
+        *ngFor="let image of imageList"
+        src="assets/images/about/{{image.preview}}"
+        class="certificates__item" alt="Сертификат {{image.id}}"
+        (click)="showFull(image.id)"
+      >
+      <div
+        [style.display]="isFull?'flex':'none'"
+        [ngClass]="{showFull:isFull}"
+      >
+        <button class="showFull-arrow _left" type="button" (click)="backImage()"></button>
+        <img
+          class="showFull__image"
+          src="assets/images/about/{{imageList[idImage-1].retinaSize}}"
+          alt="Сертификат {{imageList[idImage-1].id}}"
+          (click)="closeFull()"
+        >
+        <button class="showFull-arrow _right" type="button" (click)="nextImage()"></button>
+      </div>
     </div>
   </div>
 </div>
