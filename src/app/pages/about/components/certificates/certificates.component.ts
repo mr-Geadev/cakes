@@ -27,24 +27,22 @@ export class CertificatesComponent {
     this.idImage = id;
   }
 
-  public closeFull(): void {
-    this.isFull = false;
+  public closeFull(targetName: string): void {
+    if (this.isFull && targetName != 'button') this.isFull = false;
   }
 
   public nextImage(): void {
     let id = this.idImage;
-    if (++id == 4) {
+    if (++id == this.imageList.length + 1) {
       this.idImage = 1;
     } else {
       ++this.idImage;
     }
-    this.changeDetection.detectChanges();
   }
 
   public backImage(): void {
     let id = this.idImage;
     if (--id == 0) this.idImage = 3;
     else --this.idImage;
-    this.changeDetection.detectChanges();
   }
 }

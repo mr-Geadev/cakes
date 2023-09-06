@@ -11,13 +11,13 @@
       <div
         [style.display]="isFull?'flex':'none'"
         [ngClass]="{showFull:isFull}"
+        (click)="closeFull($any($event.target).localName)"
       >
         <button class="showFull-arrow _left" type="button" (click)="backImage()"></button>
         <img
           class="showFull__image"
           src="assets/images/about/{{imageList[idImage-1].retinaSize}}"
           alt="Сертификат {{imageList[idImage-1].id}}"
-          (click)="closeFull()"
         >
         <button class="showFull-arrow _right" type="button" (click)="nextImage()"></button>
       </div>

@@ -1,4 +1,4 @@
-import { NgForOf, NgIf } from '@angular/common';
+import { CommonModule, NgForOf, NgIf } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -16,7 +16,7 @@ import { ProductGalleryComponent } from './components/product-gallery/product-ga
 import { AnotherSectionComponent } from './components/another-section/another-section.component';
 
 @NgModule({
-  imports: [RouterModule, InputComponent, ReactiveFormsModule, NgForOf, NgIf],
+  imports: [RouterModule, InputComponent, ReactiveFormsModule, NgForOf, NgIf, CommonModule],
   declarations: [
     HeaderComponent,
     FooterComponent,

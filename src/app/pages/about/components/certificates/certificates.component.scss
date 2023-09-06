@@ -55,7 +55,7 @@
   height: 100%;
 
   position: fixed;
-  z-index: 999;
+  z-index: 888;
   top: 0;
   left: 0;
   right: 0;
@@ -63,7 +63,13 @@
 
   background: rgba(0, 0, 0, 0.8);
 
+  &__image {
+    width: 60%;
+    border-radius: 5px;
+  }
+
   &-arrow {
+    z-index: 999;
     appearance: none;
     border: 0;
     width: 40px;
