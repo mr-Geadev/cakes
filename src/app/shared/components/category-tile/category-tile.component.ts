@@ -4,7 +4,7 @@ import { Category } from 'src/app/categories';
 @Component({
   selector: 'app-category-tile',
   templateUrl: './category-tile.component.html',
-  styleUrls: ['./category-tile.component.scss']
+  styleUrls: ['./category-tile.component.scss'],
 })
 export class CategoryTileComponent {
   @Input() category!: Category;

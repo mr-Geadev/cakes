@@ -13,7 +13,7 @@ const routes: Routes = [
         text: 'Следует отметить, что дальнейшее развитие различных форм деятельности позволяет выполнить важные',
         illustrationFileName: 'desserts',
         illustrationMargin: 72,
-        backgroundColor: '#94C5BD'
+        backgroundColor: '#94C5BD',
       },
     },
   },
@@ -27,7 +27,7 @@ const routes: Routes = [
         text: 'Следует отметить, что дальнейшее развитие различных форм деятельности позволяет выполнить важные',
         illustrationFileName: 'classic',
         illustrationMargin: -75,
-        backgroundColor: '#94C5BD'
+        backgroundColor: '#94C5BD',
       },
     },
   },
@@ -41,7 +41,7 @@ const routes: Routes = [
         text: 'Следует отметить, что дальнейшее развитие различных форм деятельности позволяет выполнить важные',
         illustrationFileName: 'bakery',
         illustrationMargin: -82,
-        backgroundColor: '#FFD8BE'
+        backgroundColor: '#FFD8BE',
       },
     },
   },
@@ -52,9 +52,10 @@ const routes: Routes = [
       typeHeader: 'article',
       articleContent: {
         title: 'Хлеб',
-        subtitle: 'Как принято считать, действия представителей оппозиции описаны максимально подробно.',
+        subtitle:
+          'Как принято считать, действия представителей оппозиции описаны максимально подробно.',
         text: 'Не следует, однако, забывать, что синтетическое тестирование играет определяющее значение для направлений прогрессивного развития! ',
-      illustrationFileName: "bread"
+        illustrationFileName: 'bread',
       },
     },
   },
@@ -63,11 +64,12 @@ const routes: Routes = [
     component: CatalogPage,
     data: {
       typeHeader: 'article',
-        articleContent: {
+      articleContent: {
         title: 'Диетическая продукция',
-        subtitle: 'Как принято считать, действия представителей оппозиции описаны максимально подробно.',
+        subtitle:
+          'Как принято считать, действия представителей оппозиции описаны максимально подробно.',
         text: 'Не следует, однако, забывать, что синтетическое тестирование играет определяющее значение для направлений прогрессивного развития!',
-        illustrationFileName: "diet"
+        illustrationFileName: 'diet',
       },
     },
   },
@@ -79,6 +81,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class CatalogRoutingPageModels { }
+export class CatalogRoutingPageModels {}

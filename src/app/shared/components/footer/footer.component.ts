@@ -4,7 +4,7 @@ import { socialLinkList } from 'src/app/shared/components/social-block/social-bl
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
   currentYear = new Date().getFullYear();

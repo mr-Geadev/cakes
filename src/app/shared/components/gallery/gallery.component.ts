@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 
 export type Photo = {
- preview: string;
- retinaSize?: string;
-}
+  preview: string;
+  retinaSize?: string;
+};
 
 @Component({
   selector: 'app-gallery',
@@ -11,5 +11,5 @@ export type Photo = {
   styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent {
-  @Input() photoList: Photo[] = []
+  @Input() photoList: Photo[] = [];
 }
