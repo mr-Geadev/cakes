@@ -10,19 +10,13 @@ import { ReviewCardComponent } from 'src/app/shared/components/review-card/revie
 import { FooterComponent } from 'src/app/shared/components/footer/footer.component';
 import { GalleryComponent } from 'src/app/shared/components/gallery/gallery.component';
 import { HeaderComponent } from 'src/app/shared/components/header/header.component';
-import { SocialBlockComponent } from "./components/social-block/social-block.component";
-import { ProductComponent } from "./components/product/product.component";
-import { ProductGalleryComponent } from "./components/product-gallery/product-gallery.component";
-import { AnotherSectionComponent } from "./components/another-section/another-section.component";
+import { SocialBlockComponent } from './components/social-block/social-block.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductGalleryComponent } from './components/product-gallery/product-gallery.component';
+import { AnotherSectionComponent } from './components/another-section/another-section.component';
 
 @NgModule({
-  imports: [
-    RouterModule,
-    InputComponent,
-    ReactiveFormsModule,
-    NgForOf,
-    NgIf,
-  ],
+  imports: [RouterModule, InputComponent, ReactiveFormsModule, NgForOf, NgIf],
   declarations: [
     HeaderComponent,
     FooterComponent,
@@ -43,7 +37,7 @@ import { AnotherSectionComponent } from "./components/another-section/another-se
     ReviewCardComponent,
     GalleryComponent,
     SocialBlockComponent,
-     CallbackFormComponent,
+    CallbackFormComponent,
     AdvantagesComponent,
     ProductComponent,
     AnotherSectionComponent,

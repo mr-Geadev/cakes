@@ -8,9 +8,7 @@ import { map } from 'rxjs';
   styleUrls: ['./catalog.page.scss'],
 })
 export class CatalogPage {
-  readonly typeHeader = this.route.data.pipe(
-    map((data) => data['typeHeader']),
-  )
+  readonly typeHeader = this.route.data.pipe(map((data) => data['typeHeader']));
 
   constructor(private route: ActivatedRoute) {}
 }

@@ -8,8 +8,7 @@ import { ProductItemComponent } from 'src/app/pages/catalog/product-item/product
 import { ProductListComponent } from 'src/app/pages/catalog/product-list/product-list.component';
 import { InputComponent } from 'src/app/shared/components/input/input.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { ReactiveFormsModule } from "@angular/forms";
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -30,6 +29,4 @@ import { ReactiveFormsModule } from "@angular/forms";
   providers: [],
   exports: [],
 })
-export class CatalogPageModule {
-
-}
+export class CatalogPageModule {}

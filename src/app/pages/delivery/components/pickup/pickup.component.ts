@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './pickup.component.html',
   styleUrls: ['./pickup.component.scss'],
 })
-export class PickupComponent {
-
-}
+export class PickupComponent {}

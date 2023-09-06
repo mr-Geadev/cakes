@@ -4,10 +4,9 @@ import { Photo } from 'src/app/shared/components/gallery/gallery.component';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent {
-
   readonly photoList: Photo[] = [
     { preview: 'photo_1.png', retinaSize: 'photo_1@2x.png' },
     { preview: 'photo_2.png', retinaSize: 'photo_2@2x.png' },
@@ -17,6 +16,5 @@ export class PortfolioComponent {
     { preview: 'photo_6.png', retinaSize: 'photo_6@2x.png' },
     { preview: 'photo_7.png', retinaSize: 'photo_7@2x.png' },
     { preview: 'photo_8.png', retinaSize: 'photo_8@2x.png' },
-  ]
-
+  ];
 }
