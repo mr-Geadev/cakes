@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { Photo } from 'src/app/shared/components/gallery/gallery.component';
 import { ImageViewerService } from 'src/app/shared/components/image-viewer/image-viewer.service';
+
+import { Photo } from 'src/app/shared/components/gallery/gallery.component';
+import { Image } from '../../../pages/about/components/certificates/certificates.component';
 
 @Component({
   selector: 'app-image-viewer',
@@ -8,7 +10,7 @@ import { ImageViewerService } from 'src/app/shared/components/image-viewer/image
   styleUrls: ['image-viewer.component.scss'],
 })
 export class ImageViewerComponent {
-  public imageList: Photo[] = [];
+  public imageList: Photo[] | Image[] = [];
   public currentImageIndex: number = 0;
 
   isShowImageViewer: boolean = false;

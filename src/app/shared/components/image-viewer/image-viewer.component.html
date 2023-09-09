@@ -1,18 +1,18 @@
 <div
-  class="showFull"
+  class="imageViewer"
   *ngIf="isShowImageViewer"
 >
-  <div class="showFull__background" (click)="closeFull()"></div>
+  <div class="imageViewer__background" (click)="closeFull()"></div>
 
-  <button class="showFull-arrow _left" type="button" (click)="backImage()"></button>
+  <button class="imageViewer-arrow _left" type="button" (click)="backImage()"></button>
 
   <img
-    class="showFull__image"
+    class="imageViewer__item"
     srcset="
-      /assets/images/home/portfolio/{{imageList[currentImageIndex].preview}} 1x,
-      /assets/images/home/portfolio/{{imageList[currentImageIndex].retinaSize}} 2x,
+      {{imageList[currentImageIndex].preview}} 1x,
+      {{imageList[currentImageIndex].retinaSize}} 2x,
     "
-    alt="Сертификат {{currentImageIndex}}"
+    alt="Картинка {{currentImageIndex}}"
   >
-  <button class="showFull-arrow _right" type="button" (click)="nextImage()"></button>
+  <button class="imageViewer-arrow _right" type="button" (click)="nextImage()"></button>
 </div>

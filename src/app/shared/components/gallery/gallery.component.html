@@ -2,8 +2,8 @@
   <img
     *ngFor="let photo of photoList; let i = index"
     srcset="
-      /assets/images/home/portfolio/{{photo.preview}} 1x,
-      /assets/images/home/portfolio/{{photo.retinaSize}} 2x,
+      {{photo.preview}} 1x,
+      {{photo.retinaSize}} 2x,
     "
     class="gallery__photo" alt="Сертификат {{i}}"
     (click)="showFull(i)">

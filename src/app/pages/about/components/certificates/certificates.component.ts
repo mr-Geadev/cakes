@@ -1,9 +1,9 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { Component } from '@angular/core';
+import { ImageViewerService } from '../../../../shared/components/image-viewer/image-viewer.service';
 
-type Image = {
-  id: number;
+export type Image = {
   preview: string;
-  retinaSize: string;
+  retinaSize?: string;
 };
 
 @Component({
@@ -12,37 +12,24 @@ type Image = {
   styleUrls: ['./certificates.component.scss'],
 })
 export class CertificatesComponent {
-  constructor(private changeDetection: ChangeDetectorRef) {}
-  isFull: boolean = false;
-  idImage: number = 1;
-
   readonly imageList: Image[] = [
-    { id: 1, preview: 'about-certificat-1@1x.png', retinaSize: 'about-certificat-1@1x.png' },
-    { id: 2, preview: 'about-certificat-2@1x.png', retinaSize: 'about-certificat-2@1x.png' },
-    { id: 3, preview: 'about-certificat-3@1x.png', retinaSize: 'about-certificat-3@1x.png' },
+    {
+      preview: '/assets/images/about/about-certificat-1@1x.png',
+      retinaSize: '/assets/images/about/about-certificat-1@1x.png',
+    },
+    {
+      preview: '/assets/images/about/about-certificat-2@1x.png',
+      retinaSize: '/assets/images/about/about-certificat-2@1x.png',
+    },
+    {
+      preview: '/assets/images/about/about-certificat-3@1x.png',
+      retinaSize: '/assets/images/about/about-certificat-3@1x.png',
+    },
   ];
 
-  public showFull(id: number): void {
-    this.isFull = true;
-    this.idImage = id;
+  public showFull(index: number): void {
+    this.imageViewerService.openViewer(index, this.imageList);
   }
 
-  public closeFull(targetName: string): void {
-    if (this.isFull && targetName != 'button') this.isFull = false;
-  }
-
-  public nextImage(): void {
-    let id = this.idImage;
-    if (++id == this.imageList.length + 1) {
-      this.idImage = 1;
-    } else {
-      ++this.idImage;
-    }
-  }
-
-  public backImage(): void {
-    let id = this.idImage;
-    if (--id == 0) this.idImage = 3;
-    else --this.idImage;
-  }
+  constructor(private imageViewerService: ImageViewerService) {}
 }
