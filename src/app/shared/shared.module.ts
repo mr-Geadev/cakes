@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AdvantagesComponent } from 'src/app/shared/components/advantages/advantages.component';
 import { CallbackFormComponent } from 'src/app/shared/components/callback-form/callback-form.component';
 import { CategoryTileComponent } from 'src/app/shared/components/category-tile/category-tile.component';
+import { ImageViewerComponent } from 'src/app/shared/components/image-viewer/image-viewer.component';
 import { InputComponent } from 'src/app/shared/components/input/input.component';
 import { ReviewCardComponent } from 'src/app/shared/components/review-card/review-card.component';
 import { FooterComponent } from 'src/app/shared/components/footer/footer.component';
@@ -29,6 +30,8 @@ import { AnotherSectionComponent } from './components/another-section/another-se
     ProductComponent,
     ProductGalleryComponent,
     AnotherSectionComponent,
+
+    ImageViewerComponent,
   ],
   exports: [
     HeaderComponent,
@@ -41,6 +44,8 @@ import { AnotherSectionComponent } from './components/another-section/another-se
     AdvantagesComponent,
     ProductComponent,
     AnotherSectionComponent,
+
+    ImageViewerComponent,
   ],
 })
 export class SharedModule {}

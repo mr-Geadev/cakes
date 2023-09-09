@@ -1,24 +1,10 @@
 <div class="gallery">
   <img
-    *ngFor="let photo of photoList"
+    *ngFor="let photo of photoList; let i = index"
     srcset="
       /assets/images/home/portfolio/{{photo.preview}} 1x,
       /assets/images/home/portfolio/{{photo.retinaSize}} 2x,
     "
-    class="gallery__photo" alt="Сертификат {{photo.id}}"
-    (click)="showFull(photo.id)">
-
-  <div
-    [style.display]="isFull?'flex':'none'"
-    [ngClass]="{showFull:isFull}"
-    (click)="closeFull($any($event.target).localName)"
-  >
-    <button class="showFull-arrow _left" type="button" (click)="backImage()"></button>
-    <img
-      class="showFull__image"
-      src="/assets/images/home/portfolio/{{photoList[idImage-1].retinaSize}}"
-      alt="Сертификат {{photoList[idImage-1].id}}"
-    >
-    <button class="showFull-arrow _right" type="button" (click)="nextImage()"></button>
-  </div>
+    class="gallery__photo" alt="Сертификат {{i}}"
+    (click)="showFull(i)">
 </div>
