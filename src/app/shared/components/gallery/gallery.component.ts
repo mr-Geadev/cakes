@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ImageViewerService } from 'src/app/shared/components/image-viewer/image-viewer.service';
 
 export type Photo = {
   preview: string;
@@ -12,4 +13,10 @@ export type Photo = {
 })
 export class GalleryComponent {
   @Input() photoList: Photo[] = [];
+
+  public showFull(index: number): void {
+    this.imageViewerService.openViewer(index, this.photoList);
+  }
+
+  constructor(private imageViewerService: ImageViewerService) {}
 }

@@ -1,0 +1,18 @@
+<div
+  class="imageViewer"
+  *ngIf="isShowImageViewer"
+>
+  <div class="imageViewer__background" (click)="closeFull()"></div>
+
+  <button class="imageViewer-arrow _left" type="button" (click)="backImage()"></button>
+
+  <img
+    class="imageViewer__item"
+    srcset="
+      {{imageList[currentImageIndex].preview}} 1x,
+      {{imageList[currentImageIndex].retinaSize}} 2x,
+    "
+    alt="Картинка {{currentImageIndex}}"
+  >
+  <button class="imageViewer-arrow _right" type="button" (click)="nextImage()"></button>
+</div>
