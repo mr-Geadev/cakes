@@ -10,6 +10,7 @@ export type Photo = {
   templateUrl: './another-section.component.html',
   styleUrls: ['./another-section.component.scss'],
 })
+//TODO удалить это
 export class AnotherSectionComponent {
   @Input() photoList: Photo[] = [];
 }

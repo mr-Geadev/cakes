@@ -30,32 +30,35 @@
     z-index: 1000;
   }
 
-  &-arrow {
+  &__button {
     z-index: 999;
     width: 40px;
     height: 40px;
     border-radius: 50px;
     margin-left: 25px;
-    background-image: url("/assets/images/product/product-arrow-hover.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     cursor: pointer;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-icon {
+      color: white;
+      width: 16px;
+      aspect-ratio: 1 / 1;
+    }
 
     &:hover {
       background-color: $lightRed;
     }
 
     &._left {
-      transform: rotate(180deg) translateY(50%);
       left: 100px;
-      margin-left: 0;
-      margin-right: 25px;
     }
 
     &._right {
-      transform: translateY(-50%);
       right: 100px;
     }
   }

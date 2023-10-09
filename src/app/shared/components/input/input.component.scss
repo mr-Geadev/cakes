@@ -28,9 +28,9 @@
     &-icon {
       margin-right: 8px;
       width: 16px;
-      display: inline-block;
+      display: flex;
       aspect-ratio: 1 / 1;
-      background-image: url("/assets/images/icons/required-icon.svg");
+      color: $green;
 
       &._hidden {
         visibility: hidden;
@@ -49,6 +49,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    color: $red;
 
     &._visible {
       opacity: 1;
@@ -57,14 +58,12 @@
     &-icon {
       margin-right: 8px;
       width: 16px;
-      display: inline-block;
+      display: flex;
       aspect-ratio: 1 / 1;
-      background-image: url("/assets/images/icons/error-icon.svg");
     }
 
     &-message {
       @include button2regular;
-      color: $red;
     }
   }
 }

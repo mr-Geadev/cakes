@@ -1,9 +1,10 @@
 <div class="input-container">
   <label *ngIf="label" class="input__label" [for]="id">
-    <span
+    <svg-icon
       class="input__label-icon"
       [class._hidden]="!control.hasValidator(Validators.required)"
-    ></span>
+      icon="required"
+    />
 
     <span class="input__label-message">
       {{ label }}
@@ -22,7 +23,7 @@
     class="input__error"
     [class._visible]="control.touched && control.hasError('required')"
   >
-    <span class="input__error-icon"></span>
+    <svg-icon class="input__error-icon" icon="alert-circle" />
     <span class="input__error-message">Поле обязательно для заполнения</span>
   </div>
 
@@ -30,7 +31,7 @@
     class="input__error"
     [class._visible]="control.touched && control.hasError('pattern')"
   >
-    <span class="input__error-icon"></span>
+    <svg-icon class="input__error-icon" icon="alert-circle" />
     <span class="input__error-message">Значение введено неверно</span>
   </div>
 </div>

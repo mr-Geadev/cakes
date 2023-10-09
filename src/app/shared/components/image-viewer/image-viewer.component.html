@@ -4,7 +4,9 @@
 >
   <div class="imageViewer__background" (click)="closeFull()"></div>
 
-  <button class="imageViewer-arrow _left" type="button" (click)="backImage()"></button>
+  <button class="imageViewer__button _left" type="button" (click)="backImage()">
+    <svg-icon class="imageViewer__button-icon" icon="arrow-left" />
+  </button>
 
   <img
     class="imageViewer__item"
@@ -14,5 +16,7 @@
     "
     alt="Картинка {{currentImageIndex}}"
   >
-  <button class="imageViewer-arrow _right" type="button" (click)="nextImage()"></button>
+  <button class="imageViewer__button _right" type="button" (click)="nextImage()">
+    <svg-icon class="imageViewer__button-icon" icon="arrow-right" />
+  </button>
 </div>

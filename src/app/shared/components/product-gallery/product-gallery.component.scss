@@ -24,33 +24,22 @@
   &-arrow {
     width: 40px;
     height: 40px;
+    padding: 15px;
     border-radius: 50px;
-    margin-left: 25px;
-    background-image: url("/assets/images/product/product-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    color: white;
+    background-color: $lightRed;
+    cursor: pointer;
 
-    &_left {
-      transform: rotate(-0deg);
-      margin-left: 0;
+    &._left {
       margin-right: 25px;
-
-      &:hover {
-        transform: rotate(-180deg);
-      }
     }
 
-    &_right {
-      transform: rotate(-180deg);
-
-      &:hover {
-        transform: rotate(-0deg);
-      }
+    &._right {
+      margin-left: 25px;
     }
 
     &:hover {
-      background-image: url("/assets/images/product/product-arrow-hover.svg");
-      background-color: $lightRed;
+      background-color: $red;
     }
   }
 }
