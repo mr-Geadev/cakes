@@ -3,29 +3,29 @@ import { Component, Input } from '@angular/core';
 type SocialLink = {
   name: string;
   link: string;
-  icon: string;
+  iconName: string;
 };
 
 export const socialLinkList: SocialLink[] = [
   {
     name: 'vk',
     link: 'https://vk.com/',
-    icon: 'assets/images/icons/vk-circle.svg',
+    iconName: 'vk-circle',
   },
   {
     name: 'telegram',
     link: 'https://t.me/Drunk_Bear19',
-    icon: 'assets/images/icons/telegram-circle.svg',
+    iconName: 'telegram-circle',
   },
   {
     name: 'whatsapp',
     link: 'https://wa.me/79000000000',
-    icon: 'assets/images/icons/whatsapp-circle.svg',
+    iconName: 'whatsapp-circle',
   },
   {
     name: 'viber',
     link: 'viber://chat?number=%2B79372545419',
-    icon: 'assets/images/icons/viber-circle.svg',
+    iconName: 'viber-circle',
   },
 ];
 

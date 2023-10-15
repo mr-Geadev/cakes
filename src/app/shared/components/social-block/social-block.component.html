@@ -7,9 +7,11 @@
     *ngFor="let link of socialLinkList"
     [href]="link.link"
     target="_blank">
-    <img
+
+    <svg-icon
       class="social-block-item"
-      [src]="link.icon"
-      [alt]="link.name">
+      [icon]="link.iconName"
+    />
+
   </a>
 </div>

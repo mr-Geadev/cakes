@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port=4300",
-    "build": "ng build",
+    "start": "npm run sprites && ng serve --port=4300",
+    "build": "npm run sprites && ng build",
     "watch": "ng build --watch --configuration development",
+    "sprites": "svg-sprite --config sprite-config.json src/icons/*.svg",
     "test": "ng test",
     "prettier": "prettier --write src/**/*.ts",
     "lint": "eslint --debug src/",
@@ -13,7 +14,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.ts": [
+    "src/*.ts": [
       "npm run lint:write",
       "git add"
     ]
@@ -53,6 +54,7 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
-    "typescript": "~4.8.2"
+    "typescript": "~4.8.2",
+    "svg-sprite": "^2.0.2"
   }
 }
