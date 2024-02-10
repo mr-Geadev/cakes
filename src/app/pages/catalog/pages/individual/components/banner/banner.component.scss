@@ -1,0 +1,42 @@
+@import "src/app/ui-kit/typography";
+@import "src/app/ui-kit/colors";
+@import "src/app/ui-kit/grid";
+
+.banner {
+  height: 930px;
+  color: $whiteBg;
+
+  background-image:
+    url('/assets/images/horizontal-line-green.svg'),
+    image-set(
+        url('/assets/images/order/banner-bg@1x.png') 1x,
+        url('/assets/images/order/banner-bg@2x.png') 2x
+    );
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom,  center top;
+
+  @media screen and (max-width: 1600px) {
+    height: 86vh;
+  }
+
+  &__container {
+    padding-top: 24vh;
+  }
+
+  &__title {
+    @include heading1;
+  }
+
+  &__text {
+    @include body2l;
+    margin-top: 24px;
+    width: 577px;
+  }
+
+  &__catalog-link {
+    @include button1l;
+    margin-top: 64px;
+    @include colWidth(3);
+  }
+}

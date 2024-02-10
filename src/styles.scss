@@ -12,3 +12,12 @@ body {
   color: $typographyDark;
   background-color: $whiteBg;
 }
+
+tui-dialog[data-appearance='taviko-modal'] {
+  border: none;
+  border-radius: 8px;
+
+  .t-content {
+    padding: 80px 100px;
+  }
+}

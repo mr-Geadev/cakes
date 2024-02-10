@@ -1,6 +1,4 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { map } from 'rxjs';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-catalog-header',
@@ -8,7 +6,11 @@ import { map } from 'rxjs';
   styleUrls: ['./catalog-header.component.scss'],
 })
 export class CatalogHeaderComponent {
-  readonly content = this.route.data.pipe(map((data) => data['headerContent']));
+  @Input() title!: string;
+  @Input() text!: string;
+  @Input() illustrationFileName!: string;
+  @Input() illustrationMargin!: number;
+  @Input() backgroundColor!: string;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor() {}
 }

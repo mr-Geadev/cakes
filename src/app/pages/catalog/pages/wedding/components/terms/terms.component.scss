@@ -1,0 +1,37 @@
+@import "../../../../../../ui-kit/typography";
+@import "../../../../../../ui-kit/colors";
+@import "../../../../../../ui-kit/grid";
+
+.terms {
+  padding-bottom: 205px;
+
+  &__wrapper {
+    margin-top: 24px;
+  }
+
+  &__title {
+    @include heading2;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__text {
+    @include body3regular;
+    margin-top: 24px;
+  }
+
+  &__textBold {
+    @include body3semibold;
+  }
+
+  &__subtitle {
+    @include heading4;
+    margin-top: 32px;
+  }
+
+  &__catalog-link {
+    @include button1l;
+    margin-top: 64px;
+    @include colWidth(3);
+  }
+}
