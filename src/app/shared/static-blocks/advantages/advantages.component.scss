@@ -1,6 +1,6 @@
-@import "typography";
-@import "grid";
-@import "colors";
+@import "../../../ui-kit/typography";
+@import "../../../ui-kit/grid";
+@import "../../../ui-kit/colors";
 
 .advantages {
   padding-top: 80px;
@@ -12,7 +12,7 @@
   }
 
   &__list {
-    background-image: url("/assets/images/home/advantages-background.svg");
+    background-image: url("/src/assets/images/home/advantages-background.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;

@@ -8,6 +8,7 @@ import { ProductListComponent } from 'src/app/pages/catalog/product-list/product
 import { InputComponent } from 'src/app/shared/components/input/input.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AdvantagesComponent } from 'src/app/shared/static-blocks/advantages/advantages.component';
 import { DessertsComponent } from './pages/desserts/desserts.component';
 import { ClassicComponent } from './pages/classic/classic.component';
 import { BakeryComponent } from './pages/bakery/bakery.component';
@@ -22,6 +23,7 @@ import { DietComponent } from './pages/diet/diet.component';
     ReactiveFormsModule,
     InputComponent,
     NgOptimizedImage,
+    AdvantagesComponent
   ],
   declarations: [
     ProductListComponent,

@@ -10,6 +10,7 @@ import { SpecialOfferComponent } from 'src/app/pages/home/components/special-off
 import { HomeComponent } from 'src/app/pages/home/home.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AdvantagesComponent } from 'src/app/shared/static-blocks/advantages/advantages.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ]),
     SharedModule,
     ReactiveFormsModule,
+    AdvantagesComponent
   ],
   providers: [],
   exports: [],
