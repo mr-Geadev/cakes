@@ -1,6 +1,6 @@
-@import "typography";
-@import "colors";
-@import "grid";
+@import "src/app/ui-kit/typography";
+@import "src/app/ui-kit/colors";
+@import "src/app/ui-kit/grid";
 
 .banner {
   height: 930px;
@@ -9,16 +9,15 @@
   background-image:
     url('/assets/images/horizontal-line-green.svg'),
     image-set(
-        url('/assets/images/wedding/banner-bg@1x.png') 1x,
-        url('/assets/images/wedding/banner-bg@1x.png') 2x
+        url('/assets/images/order/banner-bg@1x.png') 1x,
+        url('/assets/images/order/banner-bg@2x.png') 2x
     );
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom,  center top;
 
   @media screen and (max-width: 1600px) {
-    height: 103vh;
-    background-size: contain, cover;
+    height: 86vh;
   }
 
   &__container {
