@@ -1,5 +1,5 @@
-@import "../../../ui-kit/grid";
-@import "../../../ui-kit/typography";
+@import "../../../../ui-kit/grid";
+@import "../../../../ui-kit/typography";
 
 .callback {
   padding: 224px 0 120px;
@@ -7,7 +7,7 @@
   position: relative;
   overflow: hidden;
 
-  background-image: url("/assets/images/callback/callback-bg.svg");
+  background-image: url("/src/assets/images/callback/callback-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
 

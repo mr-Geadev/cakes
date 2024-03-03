@@ -2,8 +2,7 @@ import { CommonModule, NgForOf, NgIf } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { TuiDialogModule, TuiDialogService } from '@taiga-ui/core';
-import { CallbackFormComponent } from 'src/app/shared/components/callback-form/callback-form.component';
+import { TuiDialogModule } from '@taiga-ui/core';
 import { CategoryTileComponent } from 'src/app/shared/components/category-tile/category-tile.component';
 import { IconsDefinitionComponent } from 'src/app/shared/components/icons-definition/icons-definition.component';
 import { ImageViewerComponent } from 'src/app/shared/components/image-viewer/image-viewer.component';
@@ -15,9 +14,7 @@ import { GalleryComponent } from 'src/app/shared/components/gallery/gallery.comp
 import { HeaderComponent } from 'src/app/shared/components/header/header.component';
 import { SvgIconComponent } from 'src/app/shared/components/svg-icon/svg-icon.component';
 import { SocialBlockComponent } from './components/social-block/social-block.component';
-import { ProductComponent } from '../entities/product/components/product/product.component';
 import { ProductGalleryComponent } from './components/product-gallery/product-gallery.component';
-import { RecommendationSectionComponent } from 'src/app/shared/static-blocks/recomendation-section/recommendation-section.component';
 
 @NgModule({
   imports: [RouterModule, InputComponent, SvgIconComponent, ReactiveFormsModule, TuiDialogModule, NgForOf, NgIf, CommonModule],
@@ -28,8 +25,6 @@ import { RecommendationSectionComponent } from 'src/app/shared/static-blocks/rec
     ReviewCardComponent,
     GalleryComponent,
     SocialBlockComponent,
-    CallbackFormComponent,
-    ProductComponent,
     ProductGalleryComponent,
     OrderFormComponent,
 
@@ -43,9 +38,8 @@ import { RecommendationSectionComponent } from 'src/app/shared/static-blocks/rec
     ReviewCardComponent,
     GalleryComponent,
     SocialBlockComponent,
-    CallbackFormComponent,
-    ProductComponent,
     OrderFormComponent,
+    ProductGalleryComponent,
 
     ImageViewerComponent,
     IconsDefinitionComponent,

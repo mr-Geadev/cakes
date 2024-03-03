@@ -1,5 +1,5 @@
-@import "typography";
-@import "grid";
+@import "../../../../ui-kit/typography";
+@import "../../../../ui-kit/grid";
 
 .product {
   @include colWidth(4);
