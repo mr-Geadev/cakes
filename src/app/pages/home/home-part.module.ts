@@ -7,14 +7,14 @@ import { CategoriesListComponent } from 'src/app/pages/home/components/catalog/c
 import { PortfolioComponent } from 'src/app/pages/home/components/portfolio/portfolio.component';
 import { ReviewsComponent } from 'src/app/pages/home/components/reviews/reviews.component';
 import { SpecialOfferComponent } from 'src/app/pages/home/components/special-offer/special-offer.component';
-import { HomeComponent } from 'src/app/pages/home/home.component';
+import { HomePageComponent } from 'src/app/pages/home/home-page.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AdvantagesComponent } from 'src/app/shared/static-blocks/advantages/advantages.component';
 
 @NgModule({
   declarations: [
-    HomeComponent,
+    HomePageComponent,
 
     AboutComponent,
     BannerComponent,
@@ -28,7 +28,7 @@ import { AdvantagesComponent } from 'src/app/shared/static-blocks/advantages/adv
     RouterModule.forChild([
       {
         path: '',
-        component: HomeComponent,
+        component: HomePageComponent,
       },
     ]),
     SharedModule,
@@ -38,4 +38,4 @@ import { AdvantagesComponent } from 'src/app/shared/static-blocks/advantages/adv
   providers: [],
   exports: [],
 })
-export class HomeModule {}
+export class HomePartModule {}

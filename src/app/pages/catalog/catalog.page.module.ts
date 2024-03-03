@@ -8,11 +8,11 @@ import { CatalogRoutingPageModels } from 'src/app/pages/catalog/catalog-routing.
 import { InputComponent } from 'src/app/shared/components/input/input.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AdvantagesComponent } from 'src/app/shared/static-blocks/advantages/advantages.component';
-import { BakeryComponent } from './pages/bakery/bakery.component';
-import { BreadComponent } from './pages/bread/bread.component';
-import { ClassicComponent } from './pages/classic/classic.component';
-import { DessertsComponent } from './pages/desserts/desserts.component';
-import { DietComponent } from './pages/diet/diet.component';
+import { BakeryPageComponent } from 'src/app/pages/catalog/pages/bakery/bakery-page.component';
+import { BreadPage } from 'src/app/pages/catalog/pages/bread/bread-page.component';
+import { ClassicPageComponent } from 'src/app/pages/catalog/pages/classic/classic-page.component';
+import { DessertsPageComponent } from 'src/app/pages/catalog/pages/desserts/desserts-page.component';
+import { DietPageComponent } from 'src/app/pages/catalog/pages/diet/diet-page.component';
 
 @NgModule({
   imports: [
@@ -29,11 +29,11 @@ import { DietComponent } from './pages/diet/diet.component';
   declarations: [
     CatalogHeaderComponent,
     CatalogArticleComponent,
-    DessertsComponent,
-    ClassicComponent,
-    BakeryComponent,
-    BreadComponent,
-    DietComponent,
+    DessertsPageComponent,
+    ClassicPageComponent,
+    BakeryPageComponent,
+    BreadPage,
+    DietPageComponent,
   ],
   providers: [],
   exports: [],

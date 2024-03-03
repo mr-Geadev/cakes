@@ -1,39 +1,39 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BakeryComponent } from 'src/app/pages/catalog/pages/bakery/bakery.component';
-import { BreadComponent } from 'src/app/pages/catalog/pages/bread/bread.component';
-import { ClassicComponent } from 'src/app/pages/catalog/pages/classic/classic.component';
-import { DessertsComponent } from 'src/app/pages/catalog/pages/desserts/desserts.component';
-import { DietComponent } from 'src/app/pages/catalog/pages/diet/diet.component';
+import { BakeryPageComponent } from 'src/app/pages/catalog/pages/bakery/bakery-page.component';
+import { BreadPage } from 'src/app/pages/catalog/pages/bread/bread-page.component';
+import { ClassicPageComponent } from 'src/app/pages/catalog/pages/classic/classic-page.component';
+import { DessertsPageComponent } from 'src/app/pages/catalog/pages/desserts/desserts-page.component';
+import { DietPageComponent } from 'src/app/pages/catalog/pages/diet/diet-page.component';
 
 const routes: Routes = [
   {
     path: 'individual',
-    loadChildren: () => import('src/app/pages/catalog/pages/individual/individual-cakes.module').then((m) => m.IndividualCakesModule),
+    loadChildren: () => import('src/app/pages/catalog/pages/individual/individual-cakes-page.module').then((m) => m.IndividualCakesPageModule),
   },
   {
     path: 'wedding',
-    loadChildren: () => import('./pages/wedding/wedding.module').then((m) => m.WeddingModule),
+    loadChildren: () => import('src/app/pages/catalog/pages/wedding/wedding-page.module').then((m) => m.WeddingPageModule),
   },
   {
     path: 'desserts',
-    component: DessertsComponent,
+    component: DessertsPageComponent,
   },
   {
     path: 'classic',
-    component: ClassicComponent,
+    component: ClassicPageComponent,
   },
   {
     path: 'bakery',
-    component: BakeryComponent,
+    component: BakeryPageComponent,
   },
   {
     path: 'bread',
-    component: BreadComponent,
+    component: BreadPage,
   },
   {
     path: 'diet',
-    component: DietComponent,
+    component: DietPageComponent,
   },
   {
     path: '**',

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClassicComponent } from './classic.component';
+import { BakeryPageComponent } from 'src/app/pages/catalog/pages/bakery/bakery-page.component';
 
-describe('ClassicComponent', () => {
-  let component: ClassicComponent;
-  let fixture: ComponentFixture<ClassicComponent>;
+describe('BakeryComponent', () => {
+  let component: BakeryPageComponent;
+  let fixture: ComponentFixture<BakeryPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ClassicComponent ]
+      declarations: [ BakeryPageComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ClassicComponent);
+    fixture = TestBed.createComponent(BakeryPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

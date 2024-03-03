@@ -21,4 +21,4 @@ import { DescriptionComponent } from 'src/app/pages/catalog/pages/individual/com
   providers: [],
   exports: [],
 })
-export class IndividualCakesModule {}
+export class IndividualCakesPageModule {}
