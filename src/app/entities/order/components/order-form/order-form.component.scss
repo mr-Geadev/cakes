@@ -1,0 +1,18 @@
+@import "../../../../ui-kit/typography";
+@import "../../../../ui-kit/colors";
+
+.order-form {
+  width: 1000px;
+
+  &__title {
+    @include heading2();
+    color: $green;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-top: 16px;
+    @include button2regular();
+    text-align: center;
+  }
+}

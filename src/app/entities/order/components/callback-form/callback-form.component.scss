@@ -1,0 +1,63 @@
+@import "../../../../ui-kit/grid";
+@import "../../../../ui-kit/typography";
+
+.callback {
+  padding: 224px 0 120px;
+
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("/src/assets/images/callback/callback-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__illustration {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30vw;
+  }
+
+  &__title {
+    @include heading2;
+  }
+
+  &__description {
+    margin-top: 16px;
+    @include body2l;
+    max-width: 543px;
+    text-align: center;
+  }
+
+  &__form {
+    margin-top: 32px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: 640px;
+
+    &-input {
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-top: 3px;
+      }
+    }
+
+    &-btn {
+      width: 188px;
+      margin: 24px auto 0;
+      @include button2medium;
+    }
+  }
+}
