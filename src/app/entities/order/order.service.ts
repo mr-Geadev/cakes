@@ -1,6 +1,6 @@
 import { Inject, Injectable, Injector } from '@angular/core';
 import { TuiDialogService } from '@taiga-ui/core';
-import { OrderFormComponent } from 'src/app/shared/components/order-form/order-form.component';
+import { OrderFormComponent } from 'src/app/entities/order/components/order-form/order-form.component';
 import { PolymorpheusComponent } from '@tinkoff/ng-polymorpheus';
 
 export interface OrderModalContext {

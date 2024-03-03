@@ -7,7 +7,7 @@ import { CategoryTileComponent } from 'src/app/shared/components/category-tile/c
 import { IconsDefinitionComponent } from 'src/app/shared/components/icons-definition/icons-definition.component';
 import { ImageViewerComponent } from 'src/app/shared/components/image-viewer/image-viewer.component';
 import { InputComponent } from 'src/app/shared/components/input/input.component';
-import { OrderFormComponent } from 'src/app/shared/components/order-form/order-form.component';
+import { OrderFormComponent } from 'src/app/entities/order/components/order-form/order-form.component';
 import { ReviewCardComponent } from 'src/app/shared/components/review-card/review-card.component';
 import { FooterComponent } from 'src/app/shared/components/footer/footer.component';
 import { GalleryComponent } from 'src/app/shared/components/gallery/gallery.component';
@@ -26,7 +26,6 @@ import { ProductGalleryComponent } from './components/product-gallery/product-ga
     GalleryComponent,
     SocialBlockComponent,
     ProductGalleryComponent,
-    OrderFormComponent,
 
     ImageViewerComponent,
     IconsDefinitionComponent,
@@ -38,7 +37,6 @@ import { ProductGalleryComponent } from './components/product-gallery/product-ga
     ReviewCardComponent,
     GalleryComponent,
     SocialBlockComponent,
-    OrderFormComponent,
     ProductGalleryComponent,
 
     ImageViewerComponent,

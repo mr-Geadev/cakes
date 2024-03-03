@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Product } from 'src/app/shared/models/product';
+import { Product } from 'src/app/entities/product/product';
 
 const MOCK_PRODUCT_LIST: Product[] = [
   { name: 'Наполеон ', price: 1000, priceUnit: 'кг', mainImageUrl: 'napoleon.png' },
